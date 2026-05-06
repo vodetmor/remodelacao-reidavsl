@@ -1,0 +1,326 @@
+/* ==========================================================================
+   NUTRA — Design System Nutra Referência
+   ========================================================================== */
+
+:root {
+  --color-bg-primary: #ffffff;
+  --color-bg-elevated: #f0f7ff; /* Azul clínico super claro */
+  
+  --color-text: #0f172a;
+  --color-text-secondary: #475569;
+  
+  --color-clinical-blue: #1e3a8a; /* Azul Escuro Autoridade */
+  --color-gold: #f59e0b; /* Dourado / Laranja Conversão */
+  --color-gold-hover: #d97706;
+  
+  --color-border: #e2e8f0;
+  
+  --font-heading: 'Fustat', system-ui, sans-serif;
+  --font-body: 'Inter Tight', system-ui, sans-serif;
+}
+
+body.page-nutra {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  letter-spacing: -1px;
+}
+
+.text-clinical-blue { color: var(--color-clinical-blue); }
+.text-gold { color: var(--color-gold); }
+
+/* ==========================================================================
+   BOTÕES & UI
+   ========================================================================== */
+.btn-cta-gold {
+  background: linear-gradient(180deg, var(--color-gold) 0%, var(--color-gold-hover) 100%);
+  color: #fff !important;
+  border: none;
+  font-weight: 800;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgba(245, 158, 11, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 14px 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-cta-gold:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 25px rgba(245, 158, 11, 0.4);
+}
+
+.btn-large {
+  padding: 18px 40px;
+  font-size: 1.125rem;
+}
+
+/* Header Clínico */
+.header-clinical {
+  background: #ffffff !important;
+  border-bottom: 2px solid var(--color-bg-elevated);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+/* ==========================================================================
+   HERO NUTRA
+   ========================================================================== */
+.hero-nutra {
+  padding-top: 140px;
+  padding-bottom: 80px;
+  background: radial-gradient(circle at top right, var(--color-bg-elevated), transparent 60%);
+}
+
+.hero-nutra__inner {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: var(--space-4xl);
+  align-items: center;
+}
+
+.trust-badge {
+  display: inline-flex;
+  background: rgba(30, 58, 138, 0.1);
+  color: var(--color-clinical-blue);
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  margin-bottom: var(--space-lg);
+  border: 1px solid rgba(30, 58, 138, 0.2);
+}
+
+.hero-nutra__title {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+  color: var(--color-text);
+}
+
+.hero-nutra__subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--space-xl);
+  max-width: 550px;
+}
+
+.hero-nutra__benefits ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-xl) 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hero-nutra__benefits li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--color-clinical-blue);
+}
+
+.hero-nutra__benefits span {
+  color: var(--color-gold);
+  font-weight: 900;
+}
+
+/* Mockup Garrafa (CSS Only) */
+.product-mockup {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+}
+
+.bottle-shape {
+  width: 140px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  filter: drop-shadow(0 20px 30px rgba(30, 58, 138, 0.15));
+}
+
+.bottle-cap {
+  width: 120px;
+  height: 40px;
+  background: #f1f5f9;
+  border-radius: 8px 8px 0 0;
+  border: 1px solid #cbd5e1;
+  border-bottom: none;
+}
+
+.bottle-body {
+  width: 140px;
+  height: 220px;
+  background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+  border-radius: 20px;
+  border: 1px solid #cbd5e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottle-label {
+  width: 120px;
+  height: 160px;
+  background: var(--color-clinical-blue);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  border: 2px solid var(--color-gold);
+}
+
+.label-logo {
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin-bottom: 8px;
+}
+
+.label-text {
+  font-size: 0.75rem;
+  color: var(--color-gold);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.seal-badge {
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+  background: var(--color-gold);
+  color: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(245, 158, 11, 0.4);
+  border: 4px solid white;
+  transform: rotate(15deg);
+}
+
+.seal-badge span {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.seal-badge strong {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* ==========================================================================
+   CARDS & SECTIONS
+   ========================================================================== */
+.trust-section { padding-block: 100px; }
+.bg-light-blue { background-color: var(--color-bg-elevated); }
+
+.section__title {
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-bottom: var(--space-md);
+}
+
+.section__subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.mt-xl { margin-top: var(--space-2xl); }
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-xl);
+}
+
+.clinical-card {
+  background: white;
+  border-radius: 16px;
+  padding: 40px 24px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(30, 58, 138, 0.05);
+  border: 1px solid var(--color-border);
+  transition: transform 0.3s ease;
+}
+
+.clinical-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--color-clinical-blue);
+}
+
+.icon-circle {
+  width: 64px;
+  height: 64px;
+  background: var(--color-bg-elevated);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin: 0 auto 24px auto;
+  color: var(--color-clinical-blue);
+}
+
+.clinical-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 16px;
+  color: var(--color-clinical-blue);
+}
+
+.clinical-card p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.diagnosis-section {
+  padding-block: 100px;
+  background: white;
+}
+
+.footer-clinical {
+  border-top: 1px solid var(--color-border);
+  padding-block: 32px;
+  text-align: center;
+  background: var(--color-bg-elevated);
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
+
+@media (max-width: 992px) {
+  .hero-nutra__inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .hero-nutra__subtitle {
+    margin-inline: auto;
+  }
+  .hero-nutra__benefits ul {
+    align-items: center;
+  }
+  .seal-badge {
+    right: 0;
+  }
+}

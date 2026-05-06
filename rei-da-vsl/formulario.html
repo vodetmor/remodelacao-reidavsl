@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qualificação — Rei da VSL</title>
+  <meta name="description" content="Preencha nosso formulário de qualificação para receber um orçamento personalizado de VSL ou criativo para anúncio.">
+  <meta name="theme-color" content="#06071B">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Qualificação — Rei da VSL">
+  <meta property="og:description" content="Preencha nosso formulário de qualificação para receber um orçamento personalizado.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./src/css/design-system.css">
+  <link rel="stylesheet" href="./src/css/components.css">
+  <link rel="stylesheet" href="./src/css/form.css">
+</head>
+<body>
+
+  <main class="quiz" id="quiz">
+
+    <!-- ─── Header ─── -->
+    <header class="quiz__header">
+      <img
+        src="https://reidavsl.com/wp-content/uploads/2025/03/logo-horizontal.webp"
+        alt="Rei da VSL"
+        class="quiz__logo"
+        width="200"
+        height="48"
+      >
+      <div class="quiz__progress-wrapper">
+        <p class="quiz__step-indicator" id="stepIndicator">Passo 1 de 6</p>
+        <div class="progress">
+          <div class="progress__bar" id="progressBar" style="width: 16.66%"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ─── Body ─── -->
+    <div class="quiz__body">
+      <form class="quiz__form" id="quizForm" novalidate>
+
+        <!-- ═══ STEP 1: Tipo de Serviço ═══ -->
+        <div class="quiz__step active" data-step="1" id="step1">
+          <h2 class="quiz__question">O que você precisa?</h2>
+          <p class="quiz__subtitle">Selecione o serviço que melhor se encaixa na sua necessidade.</p>
+
+          <div class="quiz__options" id="optionsStep1">
+            <div class="card card-select" data-value="VSL" tabindex="0" role="button" aria-pressed="false">
+              <span class="card-select__emoji"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/><line x1="17" y1="17" x2="22" y2="17"/></svg></span>
+              <span class="card-select__label">VSL</span>
+              <span class="card-select__hint">Vídeo de vendas de alta conversão</span>
+            </div>
+            <div class="card card-select" data-value="Criativo para Anúncio" tabindex="0" role="button" aria-pressed="false">
+              <span class="card-select__emoji"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><line x1="9" y1="9" x2="15" y2="9"/><line x1="9" y1="13" x2="13" y2="13"/></svg></span>
+              <span class="card-select__label">Criativo para Anúncio</span>
+              <span class="card-select__hint">Vídeos curtos para tráfego pago</span>
+            </div>
+            <div class="card card-select" data-value="Não sei a diferença" tabindex="0" role="button" aria-pressed="false">
+              <span class="card-select__emoji"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+              <span class="card-select__label">Não sei a diferença</span>
+              <span class="card-select__hint">Te explicamos rapidinho!</span>
+            </div>
+          </div>
+
+          <!-- Info box educativo (aparece se clicar "Não sei a diferença") -->
+          <div class="quiz__info-box" id="infoVslVsCriativo">
+            <h4><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>VSL vs. Criativo — Qual a diferença?</h4>
+            <p>
+              <strong>VSL (Video Sales Letter)</strong> é um vídeo de vendas longo (5-30 min) com copy persuasiva,
+              feito para converter visitantes da sua página em compradores. Ideal para lançamentos e perpétuos.
+              <strong>A partir de R$ 800.</strong>
+            </p>
+            <br>
+            <p>
+              <strong>Criativo para Anúncio</strong> é um vídeo curto (~1 min) para rodar em Facebook, Instagram ou
+              YouTube como anúncio. O objetivo é chamar atenção e gerar cliques.
+              <strong>Combo com 5 criativos a partir de R$ 500.</strong>
+            </p>
+          </div>
+
+          <input type="hidden" name="tipo_servico" id="tipoServico" required>
+
+          <div class="quiz__nav">
+            <button type="button" class="quiz__nav-back hidden" id="backBtn1">
+              ← Voltar
+            </button>
+            <button type="button" class="btn btn-primary quiz__nav-next" id="nextBtn1" disabled>
+              Continuar →
+            </button>
+          </div>
+        </div>
+
+        <!-- ═══ STEP 2: Nicho/Produto ═══ -->
+        <div class="quiz__step" data-step="2" id="step2">
+          <h2 class="quiz__question">Qual é o seu produto ou serviço?</h2>
+          <p class="quiz__subtitle">Conte um pouco sobre o que você vende ou oferece.</p>
+
+          <div class="quiz__input-wrapper">
+            <input
+              type="text"
+              class="input"
+              name="produto_servico"
+              id="produtoServico"
+              placeholder="Ex: Curso de marketing digital, suplemento emagrecedor, agência de tráfego..."
+              required
+              autocomplete="off"
+            >
+          </div>
+
+          <div class="quiz__nav">
+            <button type="button" class="quiz__nav-back" data-back>
+              ← Voltar
+            </button>
+            <button type="button" class="btn btn-primary quiz__nav-next" id="nextBtn2" disabled>
+              Continuar →
+            </button>
+          </div>
+        </div>
+
+        <!-- ═══ STEP 3: Orçamento ═══ -->
+        <div class="quiz__step" data-step="3" id="step3">
+          <h2 class="quiz__question">Você tem orçamento acima de R$ 800?</h2>
+          <p class="quiz__subtitle">Isso nos ajuda a entender o melhor pacote para você.</p>
+
+          <div class="quiz__options quiz__options--two" id="optionsStep3">
+            <div class="card card-select" data-value="Sim, tenho orçamento" tabindex="0" role="button" aria-pressed="false">
+              <span class="card-select__emoji"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></span>
+              <span class="card-select__label">Sim, tenho orçamento</span>
+            </div>
+            <div class="card card-select" data-value="Ainda não" tabindex="0" role="button" aria-pressed="false">
+              <span class="card-select__emoji"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-warning)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="9" y1="18" x2="15" y2="18"/><line x1="10" y1="22" x2="14" y2="22"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></span>
+              <span class="card-select__label">Ainda não</span>
+            </div>
+          </div>
+
+          <!-- Info box sobre valores (aparece se clicar "Ainda não") -->
+          <div class="quiz__info-box quiz__info-box--warning" id="infoOrcamento">
+            <h4><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:6px;"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>Nossos valores mínimos</h4>
+            <p>
+              Para garantir a qualidade que nossos clientes (como Thiago Finch e Kayky Janiszewski) esperam,
+              nossos serviços partem de:<br><br>
+              • <strong>VSL completa:</strong> a partir de R$ 800<br>
+              • <strong>Criativos para anúncio:</strong> combo com 5 a partir de R$ 500<br><br>
+              Mas não se preocupe — preencha o formulário e vamos conversar sobre a melhor opção para o seu momento.
+            </p>
+          </div>
+
+          <input type="hidden" name="orcamento" id="orcamento" required>
+
+          <div class="quiz__nav">
+            <button type="button" class="quiz__nav-back" data-back>
+              ← Voltar
+            </button>
+            <button type="button" class="btn btn-primary quiz__nav-next" id="nextBtn3" disabled>
+              Continuar →
+            </button>
+          </div>
+        </div>
+
+        <!-- ═══ STEP 4: Experiência ═══ -->
+        <div class="quiz__step" data-step="4" id="step4">
+          <h2 class="quiz__question">Já fez VSL antes?</h2>
+          <p class="quiz__subtitle">Saber isso nos ajuda a montar a melhor proposta.</p>
+
+          <div class="quiz__options quiz__options--two" id="optionsStep4">
+            <div class="card card-select" data-value="Sim" tabindex="0" role="button" aria-pressed="false">
+              <span class="card-select__emoji"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/><line x1="12" y1="2" x2="12" y2="5"/><line x1="12" y1="19" x2="12" y2="22"/><line x1="2" y1="12" x2="5" y2="12"/><line x1="19" y1="12" x2="22" y2="12"/></svg></span>
+              <span class="card-select__label">Sim</span>
+              <span class="card-select__hint">Já conheço o processo</span>
+            </div>
+            <div class="card card-select" data-value="Não, é minha primeira vez" tabindex="0" role="button" aria-pressed="false">
+              <span class="card-select__emoji"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent-primary)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="none"/></svg></span>
+              <span class="card-select__label">Não, é minha primeira vez</span>
+              <span class="card-select__hint">Quero começar</span>
+            </div>
+          </div>
+
+          <input type="hidden" name="experiencia_vsl" id="experienciaVsl" required>
+
+          <div class="quiz__nav">
+            <button type="button" class="quiz__nav-back" data-back>
+              ← Voltar
+            </button>
+            <button type="button" class="btn btn-primary quiz__nav-next" id="nextBtn4" disabled>
+              Continuar →
+            </button>
+          </div>
+        </div>
+
+        <!-- ═══ STEP 5: Como Conheceu ═══ -->
+        <div class="quiz__step" data-step="5" id="step5">
+          <h2 class="quiz__question">Como nos encontrou?</h2>
+          <p class="quiz__subtitle">Queremos saber como chegou até nós.</p>
+
+          <div class="quiz__input-wrapper">
+            <input
+              type="text"
+              class="input"
+              name="como_conheceu"
+              id="comoConheceu"
+              placeholder="Ex: Instagram, indicação de um amigo, Google..."
+              required
+              autocomplete="off"
+            >
+          </div>
+
+          <div class="quiz__nav">
+            <button type="button" class="quiz__nav-back" data-back>
+              ← Voltar
+            </button>
+            <button type="button" class="btn btn-primary quiz__nav-next" id="nextBtn5" disabled>
+              Continuar →
+            </button>
+          </div>
+        </div>
+
+        <!-- ═══ STEP 6: Dados de Contato ═══ -->
+        <div class="quiz__step" data-step="6" id="step6">
+          <h2 class="quiz__question">Quase lá! Seus dados de contato</h2>
+          <p class="quiz__subtitle">Para que possamos entrar em contato com a melhor proposta.</p>
+
+          <div class="quiz__contact-grid">
+            <div class="form-group">
+              <label for="nome" class="label">Nome completo</label>
+              <input
+                type="text"
+                class="input"
+                name="nome"
+                id="nome"
+                placeholder="Seu nome"
+                required
+                autocomplete="name"
+              >
+            </div>
+            <div class="form-group">
+              <label for="email" class="label">E-mail</label>
+              <input
+                type="email"
+                class="input"
+                name="email"
+                id="email"
+                placeholder="seu@email.com"
+                required
+                autocomplete="email"
+              >
+            </div>
+            <div class="form-group">
+              <label for="whatsapp" class="label">WhatsApp com DDD</label>
+              <input
+                type="tel"
+                class="input"
+                name="whatsapp"
+                id="whatsapp"
+                placeholder="(27) 99999-9999"
+                required
+                autocomplete="tel"
+              >
+            </div>
+          </div>
+
+          <div class="quiz__nav">
+            <button type="button" class="quiz__nav-back" data-back>
+              ← Voltar
+            </button>
+            <button type="submit" class="btn btn-primary quiz__nav-next" id="submitBtn">
+              Enviar Qualificação 🚀
+            </button>
+          </div>
+        </div>
+
+        <!-- ═══ Tela de Sucesso ═══ -->
+        <div class="quiz__success" id="quizSuccess">
+          <div class="quiz__success-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="var(--color-success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <h2>Recebemos sua qualificação! <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--color-gold)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><path d="M2 4l3 12h14l3-12-6 7-4-9-4 9-6-7z"/><path d="M3 20h18"/></svg></h2>
+          <p>
+            Nossa equipe vai analisar suas respostas e entrar em contato pelo WhatsApp
+            em até 24 horas com a melhor proposta para você.
+          </p>
+          <br>
+          <a href="/" class="btn btn-secondary">Voltar ao site</a>
+        </div>
+
+      </form>
+    </div>
+
+    <!-- ─── Footer ─── -->
+    <footer class="quiz__footer">
+      <p>© 2026 Rei da VSL — Todos os direitos reservados. <a href="/">reidavsl.com</a></p>
+    </footer>
+
+  </main>
+
+  <script type="module" src="./src/js/form-quiz.js"></script>
+</body>
+</html>

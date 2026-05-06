@@ -1,0 +1,231 @@
+/* ==========================================================================
+   DESIGN SYSTEM — REI DA VSL
+   Tokens extraídos de reidavsl.com + refinamentos 2025
+   ========================================================================== */
+
+/* ---------- Google Fonts ---------- */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+  /* ── Cores Base (extraídas do reidavsl.com) ── */
+  --color-bg-primary: #0a0a0f;
+  --color-bg-elevated: #111115;
+  --color-bg-card: #16161c;
+  --color-bg-input: rgba(255, 255, 255, 0.04);
+
+  /* ── Texto ── */
+  --color-text: #ffffff;
+  --color-text-secondary: #b8b8c8;
+  --color-text-muted: #8a8a9a;
+  --color-text-dark: #333333;
+
+  /* ── Brand Colors (refinados para 2025) ── */
+  --color-accent-primary: #F67B01;       /* CTA Laranja — do site */
+  --color-accent-primary-hover: #ff9228; /* Hover mais vibrante */
+  --color-accent-secondary: #CC3366;     /* Rosa — do site */
+  --color-accent-secondary-hover: #E2498A;
+  --color-gold: #F4C421;                 /* Dourado — badges */
+  --color-gold-glow: rgba(244, 181, 16, 0.35);
+
+  /* ── Superfícies & Bordas ── */
+  --color-border: rgba(105, 114, 125, 0.5);
+  --color-border-light: rgba(255, 255, 255, 0.08);
+  --color-border-focus: var(--color-accent-primary);
+  --color-divider: rgba(213, 216, 220, 0.15);
+
+  /* ── Status ── */
+  --color-success: #22c55e;
+  --color-error: #ef4444;
+  --color-warning: #f59e0b;
+
+  /* ── Botões e Highlights ── */
+  --color-cta-green: #22c55e;
+  --color-highlight-yellow: #FFD700;
+
+  /* ── Gradientes Premium ── */
+  --gradient-hero: linear-gradient(135deg, #0a0a0f 0%, #0e0e15 40%, #12101a 100%);
+  --gradient-card: linear-gradient(145deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0.01) 100%);
+  --gradient-cta: linear-gradient(135deg, #F67B01 0%, #ff9228 100%);
+  --gradient-accent: linear-gradient(135deg, #CC3366 0%, #E2498A 100%);
+  --gradient-gold-glow: radial-gradient(ellipse at center, rgba(244, 181, 16, 0.15) 0%, transparent 70%);
+
+  /* ── Tipografia ── */
+  --font-heading: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-body: 'DM Sans', system-ui, -apple-system, sans-serif;
+  --font-mono: 'Roboto Mono', monospace;
+
+  --text-hero: clamp(2.25rem, 5vw, 3.25rem);
+  --text-h2: clamp(1.75rem, 3.5vw, 2.75rem);
+  --text-h3: clamp(1.375rem, 2.5vw, 1.75rem);
+  --text-h4: clamp(1.125rem, 2vw, 1.375rem);
+  --text-body: 1rem;
+  --text-body-lg: 1.125rem;
+  --text-small: 0.875rem;
+  --text-xs: 0.75rem;
+
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --leading-tight: 1.1;
+  --leading-snug: 1.25;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.75;
+
+  /* ── Espaçamento (escala 8px refinada) ── */
+  --space-2xs: 0.25rem;   /* 4px */
+  --space-xs: 0.5rem;     /* 8px */
+  --space-sm: 0.75rem;    /* 12px */
+  --space-md: 1rem;       /* 16px */
+  --space-lg: 1.5rem;     /* 24px */
+  --space-xl: 2rem;       /* 32px */
+  --space-2xl: 3rem;      /* 48px */
+  --space-3xl: 4rem;      /* 64px */
+  --space-4xl: 6rem;      /* 96px */
+  --space-section: clamp(4rem, 8vw, 7rem);
+
+  /* ── Border Radius ── */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 25px;
+  --radius-pill: 100px;
+  --radius-circle: 50%;
+
+  /* ── Sombras ── */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.33);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-glow-gold: 0 0 32px -2px var(--color-gold-glow);
+  --shadow-glow-accent: 0 0 32px -2px rgba(246, 123, 1, 0.3);
+  --shadow-glow-white: 0 0 32px -2px rgba(255, 255, 255, 0.15);
+  --shadow-card: 0 4px 24px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+
+  /* ── Transições ── */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Layout ── */
+  --container-max: 1200px;
+  --container-narrow: 800px;
+  --container-form: 680px;
+}
+
+/* ---------- Reset & Base ---------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  font-size: var(--text-body);
+  line-height: var(--leading-normal);
+  color: var(--color-text);
+  background-color: var(--color-bg-primary);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--color-accent-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-accent-secondary-hover);
+}
+
+/* ---------- Tipografia Utilitária ---------- */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  color: var(--color-text);
+}
+
+h1 { font-size: var(--text-hero); text-transform: uppercase; }
+h2 { font-size: var(--text-h2); }
+h3 { font-size: var(--text-h3); }
+h4 { font-size: var(--text-h4); }
+
+.text-gradient {
+  background: var(--gradient-cta);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-accent {
+  color: var(--color-accent-primary);
+}
+
+.text-muted {
+  color: var(--color-text-muted);
+}
+
+/* ---------- Layout Utilitário ---------- */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--space-lg);
+}
+
+.container--narrow {
+  max-width: var(--container-narrow);
+}
+
+.container--form {
+  max-width: var(--container-form);
+}
+
+.section {
+  padding-block: var(--space-section);
+}
+
+/* ---------- Selection ---------- */
+::selection {
+  background: var(--color-accent-primary);
+  color: var(--color-text);
+}
+
+/* ---------- Scrollbar (Webkit) ---------- */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--radius-pill);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}

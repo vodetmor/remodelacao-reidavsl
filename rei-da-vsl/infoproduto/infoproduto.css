@@ -1,0 +1,296 @@
+/* ==========================================================================
+   INFOPRODUTO — Design System NetworkPRO
+   ========================================================================== */
+
+:root {
+  /* Dark Mode for NetworkPRO */
+  --color-bg-primary: #030712; /* Quase preto */
+  --color-bg-elevated: #111827;
+  
+  --color-text: #f9fafb;
+  --color-text-secondary: #d1d5db;
+  --color-text-muted: #9ca3af;
+  
+  --color-neon: #a855f7; /* Roxo Neon */
+  --color-neon-glow: rgba(168, 85, 247, 0.4);
+  
+  --color-border: #1f2937;
+  --color-border-light: rgba(255,255,255,0.05);
+  
+  /* Sobrescrevendo Fontes */
+  --font-heading: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'Space Grotesk', system-ui, sans-serif;
+}
+
+body.dark-mode {
+  background-color: var(--color-bg-primary);
+  color: var(--color-text);
+  font-family: var(--font-body);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  letter-spacing: -1px;
+}
+
+.text-neon {
+  color: var(--color-neon);
+  text-shadow: 0 0 20px var(--color-neon-glow);
+}
+
+/* ==========================================================================
+   BOTÕES & UI
+   ========================================================================== */
+.btn-cta-neon {
+  background-color: var(--color-neon);
+  color: #fff !important;
+  border: none;
+  font-weight: 700;
+  border-radius: 8px;
+  box-shadow: 0 0 20px var(--color-neon-glow);
+  transition: all 0.3s ease;
+  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.btn-cta-neon:hover {
+  background-color: #9333ea;
+  box-shadow: 0 0 35px rgba(147, 51, 234, 0.6);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--color-text) !important;
+  border: 1px solid var(--color-border);
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 12px 24px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  border-color: var(--color-neon);
+  color: var(--color-neon) !important;
+}
+
+.btn-large {
+  padding: 16px 32px;
+  font-size: 1.125rem;
+}
+
+.ml-sm { margin-left: 16px; }
+
+/* Header Glass */
+.header-glass {
+  background: rgba(3, 7, 18, 0.7) !important;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* ==========================================================================
+   HERO & GRIDS
+   ========================================================================== */
+.hero-info {
+  position: relative;
+  padding-top: 160px;
+  padding-bottom: 120px;
+  overflow: hidden;
+}
+
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  background-image: linear-gradient(var(--color-border-light) 1px, transparent 1px),
+                    linear-gradient(90deg, var(--color-border-light) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.5;
+  mask-image: radial-gradient(circle at center, black, transparent 80%);
+  -webkit-mask-image: radial-gradient(circle at center, black, transparent 80%);
+  pointer-events: none;
+}
+
+.hero-info__inner {
+  position: relative;
+  z-index: 10;
+}
+
+.badge-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  background: rgba(168, 85, 247, 0.1);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+  color: var(--color-neon);
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: var(--space-xl);
+}
+
+.hero-info__title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  line-height: 1.1;
+  margin-bottom: var(--space-lg);
+}
+
+.hero-info__subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  max-width: 700px;
+  margin-bottom: var(--space-2xl);
+}
+
+.hero-info__visual {
+  margin-top: 60px;
+}
+
+/* Glass Panels */
+.glass-panel {
+  background: rgba(17, 24, 39, 0.6);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.mockup-header {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.mockup-header .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #374151;
+}
+
+.chart-simulation {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 150px;
+  gap: 16px;
+  padding: 0 20px;
+}
+
+.chart-simulation .bar {
+  flex: 1;
+  background: #374151;
+  border-radius: 4px 4px 0 0;
+  transition: height 1s ease;
+}
+
+.glass-badge {
+  background: rgba(3, 7, 18, 0.8) !important;
+  border: 1px solid var(--color-border) !important;
+  backdrop-filter: blur(8px);
+}
+
+.floating-badge {
+  position: absolute;
+  border-radius: 12px;
+  padding: 12px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.badge-right {
+  right: -20px;
+  top: 40px;
+}
+
+.floating-badge .label {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.floating-badge .value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* ==========================================================================
+   CARDS & SECTIONS
+   ========================================================================== */
+.section { padding-block: 100px; }
+
+.section__title {
+  font-size: clamp(2rem, 3vw, 3rem);
+  margin-bottom: var(--space-md);
+}
+
+.section__subtitle {
+  font-size: 1.125rem;
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto var(--space-2xl);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: var(--space-xl);
+}
+
+.glass-card {
+  background: rgba(17, 24, 39, 0.4);
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  padding: 32px;
+  text-align: left;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(168, 85, 247, 0.5);
+  box-shadow: 0 10px 30px rgba(168, 85, 247, 0.1);
+}
+
+.card__icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.glass-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+
+.glass-card p {
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.diagnosis-section {
+  position: relative;
+  background-color: #000;
+  overflow: hidden;
+}
+
+.footer-dark {
+  border-top: 1px solid var(--color-border);
+  padding-block: 32px;
+  text-align: center;
+  color: var(--color-text-muted);
+}

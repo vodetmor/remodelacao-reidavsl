@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serviços | Agência Camaleão</title>
+    
+    <!-- AbacatePay Design System Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@600;700&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../src/css/design-system.css" />
+    <link rel="stylesheet" href="../src/css/components.css" />
+    <link rel="stylesheet" href="./servico.css" />
+  </head>
+  <body class="page-servico">
+    <!-- ── Header ── -->
+    <header id="header" class="header">
+      <div class="container header__inner">
+        <a href="../index.html" class="header__logo" style="text-decoration: none;">
+          <h2 style="font-weight: 700; letter-spacing: -1.5px; color: var(--color-text); margin: 0; font-size: 1.5rem;">Camaleão.</h2>
+        </a>
+        <nav id="headerNav" class="header__nav">
+          <a href="#solucao" class="nav-link">Nossa Solução</a>
+          <a href="#metodo" class="nav-link">O Método</a>
+          <a href="#casos" class="nav-link">Casos de Sucesso</a>
+        </nav>
+        <div class="header__actions">
+          <a href="#diagnostico" class="btn btn-cta btn-pill">Agendar Diagnóstico</a>
+          <button class="nav-toggle" id="navToggle" aria-label="Abrir Menu">☰</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ── Hero Section ── -->
+      <section class="hero-servico">
+        <div class="hero-servico__bg"></div>
+        <div class="container hero-servico__inner">
+          <div class="hero-servico__content reveal">
+            <div class="badge-tag">
+              <span class="badge-dot"></span> Consultoria de Crescimento em Tráfego Pago
+            </div>
+            <h1 class="hero-servico__title">
+              Gestão de <span class="text-accent">tráfego e estratégias</span> para empresas que querem <span class="text-accent">aumentar suas vendas</span>.
+            </h1>
+            <p class="hero-servico__subtitle">
+              A Camaleão Agência Digital organiza e otimiza campanhas de tráfego pago para empresas que já possuem operação validada e querem transformar tráfego em crescimento previsível.
+            </p>
+            
+            <div class="hero-servico__metrics">
+              <div class="metric">
+                <h3>+6 Milhões</h3>
+                <p>gerenciados em tráfego pago</p>
+              </div>
+              <div class="metric">
+                <h3>+R$ 25 Milhões</h3>
+                <p>em vendas geradas</p>
+              </div>
+              <div class="metric">
+                <h3>+120</h3>
+                <p>empresas atendidas</p>
+              </div>
+            </div>
+
+            <div class="hero-servico__actions">
+              <a href="#diagnostico" class="btn btn-cta btn-pill btn-large shadow-hover">Agendar diagnóstico de crescimento</a>
+            </div>
+          </div>
+          
+          <div class="hero-servico__visual reveal" style="transition-delay: 0.2s">
+            <div class="dashboard-mockup">
+              <img src="/images/resultado.png" alt="Dashboard de receita mostrando crescimento escalável" loading="lazy" />
+              <div class="floating-badge badge-right">
+                <span class="label">Conversão</span>
+                <span class="value text-success">+327%</span>
+              </div>
+              <div class="floating-badge badge-left">
+                <span class="label">ROI</span>
+                <span class="value text-accent">8.5x</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Contexto do Problema ── -->
+      <section class="section problem-section" id="solucao">
+        <div class="container text-center">
+          <h2 class="section__title reveal">
+            Escalar tráfego pago exige <br class="hidden-mobile" />
+            <span class="text-accent">mais do que investir mais.</span>
+          </h2>
+          <p class="section__subtitle reveal" style="transition-delay: 0.1s">
+            Muitas empresas aumentam o investimento em anúncios sem uma fundação forte de aquisição. Isso normalmente gera:
+          </p>
+
+          <div class="grid-3 problem-cards reveal" style="transition-delay: 0.2s">
+            <div class="card card-clean">
+              <div class="card__icon card-icon-red">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"></path></svg>
+              </div>
+              <h3 class="card__title">CAC Crescente</h3>
+            </div>
+            <div class="card card-clean">
+              <div class="card__icon card-icon-red">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+              </div>
+              <h3 class="card__title">Resultados Inconsistentes</h3>
+            </div>
+            <div class="card card-clean">
+              <div class="card__icon card-icon-red">
+                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+              </div>
+              <h3 class="card__title">Dificuldade de Escala</h3>
+            </div>
+          </div>
+
+          <div class="problem-highlight reveal" style="transition-delay: 0.3s">
+            <p>Quando campanhas são estruturadas corretamente, o tráfego pago se transforma em um <span class="text-accent">motor de crescimento previsível.</span></p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── O Método ── -->
+      <section class="section method-section bg-alt" id="metodo">
+        <div class="container">
+          <div class="text-center mb-xl">
+            <div class="badge-tag mx-auto mb-sm"><span class="badge-dot"></span> Nossa Metodologia</div>
+            <h2 class="section__title reveal">Como estruturamos sua aquisição</h2>
+            <p class="section__subtitle reveal">Um processo validado em múltiplos nichos para escalar com segurança.</p>
+          </div>
+
+          <div class="grid-2 method-grid">
+            <div class="method-card reveal">
+              <div class="method-card__number">01</div>
+              <h3>Diagnóstico e Auditoria</h3>
+              <p>Mapeamos o gargalo atual da sua operação, analisamos os dados históricos e validamos a infraestrutura de tagueamento e tracking.</p>
+            </div>
+            <div class="method-card reveal" style="transition-delay: 0.1s">
+              <div class="method-card__number">02</div>
+              <h3>Planejamento Estratégico</h3>
+              <p>Definição de orçamento, projeção de CAC e ROAS alvo, e estruturação de funil com foco em aquisição e LTV.</p>
+            </div>
+            <div class="method-card reveal" style="transition-delay: 0.2s">
+              <div class="method-card__number">03</div>
+              <h3>Testes e Escala Vertical/Horizontal</h3>
+              <p>Validação de públicos e criativos em ambiente controlado, seguido por aumento orçamentário seguro nos conjuntos vencedores.</p>
+            </div>
+            <div class="method-card reveal" style="transition-delay: 0.3s">
+              <div class="method-card__number">04</div>
+              <h3>Otimização Contínua</h3>
+              <p>Análise diária de dados, melhoria nas taxas de conversão da página de destino e refinamento de oferta para baixar o CAC.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Comparação ── -->
+      <section class="section comparison-section" id="comparacao">
+        <div class="container">
+          <div class="text-center mb-xl">
+            <h2 class="section__title reveal">
+              Por que empresas escalam com a <span class="text-accent">Camaleão</span>
+            </h2>
+            <p class="section__subtitle reveal">Não somos apenas operadores de anúncios. Atuamos na estrutura completa de aquisição.</p>
+          </div>
+
+          <div class="grid-2 comparison-grid reveal" style="transition-delay: 0.1s">
+            <div class="comparison-card card-negative">
+              <h3>Agência Comum</h3>
+              <ul>
+                <li><span>❌</span> Foco em CPC</li>
+                <li><span>❌</span> Campanhas isoladas</li>
+                <li><span>❌</span> Relatórios pouco claros</li>
+                <li><span>❌</span> Estratégia desconectada do negócio</li>
+              </ul>
+            </div>
+            <div class="comparison-card card-positive">
+              <h3>Agência Camaleão</h3>
+              <ul>
+                <li><span>✅</span> Decisões baseadas em lucro e CAC</li>
+                <li><span>✅</span> Estratégia conectada ao funil de vendas</li>
+                <li><span>✅</span> Testes estruturados de criativos e públicos</li>
+                <li><span>✅</span> Dashboards claros focados em ROI</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── FAQ ── -->
+      <section class="section faq-section" id="faq">
+        <div class="container container--narrow">
+          <h2 class="section__title text-center mb-xl reveal">Perguntas <span class="text-accent">frequentes</span></h2>
+          <div class="faq-accordion reveal" style="transition-delay: 0.1s">
+            <details class="faq-item">
+              <summary>Em quanto tempo começo a ter dados relevantes nas campanhas?</summary>
+              <p>Isso depende do modelo de negócio, verba, oferta e volume de teste. O ponto principal é que acompanhamos a evolução desde o início para tomar decisões com base no comportamento real da operação.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Vocês atendem qualquer tipo de negócio?</summary>
+              <p>Hoje nosso foco está principalmente em e-commerce, infoprodutos e negócios locais, onde já temos experiência prática de operação.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Vocês também cuidam da copy dos anúncios?</summary>
+              <p>Sim. Ajudamos na construção das mensagens das campanhas para que a comunicação esteja alinhada com o público e com o objetivo da operação.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Existe investimento mínimo em mídia?</summary>
+              <p>O valor depende do tipo de operação e do objetivo de crescimento. Isso é avaliado na análise inicial.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Como funciona o início do trabalho?</summary>
+              <p>O primeiro passo é entender a operação, analisar o cenário atual e definir a estrutura inicial de campanhas.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── CTA Diagnóstico ── -->
+      <section class="section diagnosis-section text-center" id="diagnostico">
+        <div class="container container--narrow">
+          <h2 class="section__title reveal">Pronto para acelerar seu crescimento?</h2>
+          <p class="section__subtitle reveal" style="transition-delay: 0.1s">
+            Agende uma sessão estratégica gratuita. Vamos analisar sua operação atual e desenhar um plano de ação personalizado.
+          </p>
+          <div class="reveal" style="transition-delay: 0.2s">
+            <a href="../formulario.html" class="btn btn-cta btn-pill btn-large shadow-hover mt-md">Agendar Diagnóstico Estratégico</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Footer ── -->
+      <footer class="footer-clean">
+        <div class="container">
+          <div class="footer-clean__inner">
+            <p>&copy; 2025 Agência Camaleão. Todos os direitos reservados.</p>
+            <div class="footer-clean__links">
+              <a href="#">Termos de Uso</a>
+              <a href="#">Política de Privacidade</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Scripts Compartilhados -->
+    <script src="../src/js/main.js" type="module"></script>
+  </body>
+</html>
