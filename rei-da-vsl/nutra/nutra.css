@@ -280,7 +280,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 560px;
+  max-width: 720px;
   -webkit-mask-image: radial-gradient(ellipse 78% 78% at center, #000 52%, transparent 96%);
   mask-image: radial-gradient(ellipse 78% 78% at center, #000 52%, transparent 96%);
   filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.5));
