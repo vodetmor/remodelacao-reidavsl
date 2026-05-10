@@ -172,12 +172,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
 }
 .hero__bg { position: absolute; inset: 0; z-index: 0; }
 .hero__gradient {
-  position: absolute;
-  top: 20%; right: -10%;
-  width: 70vw; height: 70vw;
-  background: radial-gradient(circle, rgba(255, 94, 0, 0.18), transparent 60%);
-  filter: blur(80px);
-  pointer-events: none;
+  display: none;
 }
 .hero__grain {
   position: absolute; inset: 0;
