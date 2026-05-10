@@ -259,6 +259,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 100vh;
 }
 .hero__orb {
   position: absolute;
@@ -279,8 +280,9 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
 .hero__product {
   position: relative;
   z-index: 2;
-  width: 100%;
-  max-width: 900px;
+  width: 120%;
+  max-width: none;
+  height: auto;
   -webkit-mask-image: radial-gradient(ellipse 78% 78% at center, #000 52%, transparent 96%);
   mask-image: radial-gradient(ellipse 78% 78% at center, #000 52%, transparent 96%);
   filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.5));
@@ -1022,8 +1024,8 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
 @media (max-width: 1024px) {
   .container { padding: 0 24px; }
   .hero__grid { grid-template-columns: 1fr; gap: 48px; }
-  .hero__visual { order: -1; }
-  .hero__product { max-width: 380px; }
+  .hero__visual { order: -1; min-height: auto; }
+  .hero__product { width: 100%; max-width: 100%; }
   .hero { padding-top: 140px; min-height: auto; padding-bottom: var(--s-2xl); }
 
   .bento { grid-template-columns: repeat(2, 1fr); }
@@ -1074,7 +1076,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
   .hero { padding: 120px 0 60px; min-height: auto; }
   .hero__title { font-size: clamp(1.75rem, 7vw, 2.5rem); }
   .hero__sub { font-size: 1rem; line-height: 1.6; }
-  .hero__product { max-width: 320px; }
+  .hero__product { width: 100%; max-width: 100%; }
   .hero__actions { flex-direction: column; gap: 12px; }
   .hero__actions .btn { width: 100%; }
   .hero__trust { flex-wrap: wrap; gap: 10px; padding: 10px 16px; font-size: 0.8rem; }
@@ -1127,7 +1129,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
   .hero__sub { font-size: 0.875rem; }
   .hero__actions { flex-direction: column; gap: 10px; }
   .hero__actions .btn { width: 100%; padding: 10px 20px; font-size: 0.875rem; }
-  .hero__product { max-width: 260px; }
+  .hero__product { width: 100%; max-width: 100%; }
   .hero__trust { padding: 8px 12px; font-size: 0.75rem; }
 
   .bento { grid-template-columns: 1fr; gap: 12px; }
