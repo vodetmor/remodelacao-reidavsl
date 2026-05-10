@@ -272,15 +272,10 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
   filter: blur(40px);
 }
 .hero__orb--lg {
-  width: 95%; height: 95%;
-  background: radial-gradient(circle, rgba(255, 94, 0, 0.22), transparent 65%);
-  animation: orbit 14s ease-in-out infinite;
+  display: none;
 }
 .hero__orb--sm {
-  width: 30%; height: 30%;
-  top: 15%; right: 10%;
-  background: radial-gradient(circle, rgba(255, 122, 48, 0.5), transparent 70%);
-  animation: orbit 10s ease-in-out infinite reverse;
+  display: none;
 }
 @keyframes orbit {
   0%, 100% { transform: translate(0, 0); }
