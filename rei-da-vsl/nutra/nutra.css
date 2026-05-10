@@ -183,7 +183,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
 }
 .hero__grid {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: grid;
   grid-template-columns: 1.4fr 1fr;
   gap: var(--s-2xl);
@@ -259,7 +259,6 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
 }
 .hero__orb {
   position: absolute;
@@ -278,10 +277,10 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
   50% { transform: translate(-20px, 20px); }
 }
 .hero__product {
-  position: relative;
-  z-index: 2;
-  width: 120%;
-  max-width: none;
+  position: absolute;
+  bottom: 0;
+  right: 5%;
+  width: 45%;
   height: auto;
   -webkit-mask-image: radial-gradient(ellipse 78% 78% at center, #000 52%, transparent 96%);
   mask-image: radial-gradient(ellipse 78% 78% at center, #000 52%, transparent 96%);
