@@ -1020,6 +1020,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
    RESPONSIVO
    ════════════════════════════════════════════ */
 @media (max-width: 1024px) {
+  .container { padding: 0 24px; }
   .hero__grid { grid-template-columns: 1fr; gap: 48px; }
   .hero__visual { order: -1; }
   .hero__product { max-width: 380px; }
@@ -1052,6 +1053,9 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
 }
 
 @media (max-width: 768px) {
+  .container { padding: 0 20px; }
+  .nav { padding: 14px 0; }
+  .nav__logo { font-size: 1rem; }
   .nav__links {
     display: none;
     position: fixed;
@@ -1060,54 +1064,108 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
     border-bottom: 1px solid var(--line);
     flex-direction: column;
     gap: 0;
-    padding: 16px 24px 24px;
+    padding: 16px 20px 20px;
     backdrop-filter: blur(20px);
   }
   .nav__links.open { display: flex; }
-  .nav__links .nav__link { padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .nav__links .nav__link { padding: 12px 0; border-bottom: 1px solid var(--line); }
   .nav__toggle { display: inline-flex; }
 
-  .hero__title { font-size: clamp(2rem, 8vw, 3rem); }
-  .hero__sub { font-size: 1.0625rem; }
-  .hero__trust { flex-wrap: wrap; gap: 12px; padding: 12px 18px; }
+  .hero { padding: 120px 0 60px; min-height: auto; }
+  .hero__title { font-size: clamp(1.75rem, 7vw, 2.5rem); }
+  .hero__sub { font-size: 1rem; line-height: 1.6; }
+  .hero__product { max-width: 320px; }
+  .hero__actions { flex-direction: column; gap: 12px; }
+  .hero__actions .btn { width: 100%; }
+  .hero__trust { flex-wrap: wrap; gap: 10px; padding: 10px 16px; font-size: 0.8rem; }
   .hero__trust-divider { display: none; }
 
   .bento { grid-template-columns: 1fr; }
-  .bento__card--hero { grid-column: auto; padding: 36px 28px; }
-  .bento__card { padding: 28px 24px; }
-  .bento__card--hero .bento__title { font-size: 1.375rem; }
+  .bento__card--hero { grid-column: auto; padding: 32px 24px; }
+  .bento__card { padding: 24px 20px; }
+  .bento__card--hero .bento__title { font-size: 1.25rem; }
   .bento__card--hero .bento__text { font-size: 0.9375rem; }
 
-  .mechanism__stages { gap: 64px; }
+  .mechanism__stages { gap: 48px; }
   .stage, .stage--reverse { grid-template-columns: 1fr; gap: 12px; text-align: left; }
   .stage--reverse .stage__body { grid-column: 1; }
-  .stage__number { font-size: 5rem; text-align: left; }
+  .stage__number { font-size: 4.5rem; text-align: left; }
   .stage--reverse .stage__number { text-align: left; }
 
   .periodic { grid-template-columns: 1fr; }
   .atom { min-height: auto; }
 
-  .kit { grid-template-columns: 1fr; gap: 20px; padding: 24px; text-align: center; }
-  .kit__visual { padding: 20px; }
+  .kit { grid-template-columns: 1fr; gap: 16px; padding: 20px; text-align: center; }
+  .kit__visual { padding: 16px; }
   .kit__info { align-items: center; }
   .kit__tag { align-self: center; }
   .kit__list li { text-align: left; }
   .kit__price { align-items: center; text-align: center; }
+  .kit__price-now { font-size: 2rem; }
   .kit__highlight { left: 50%; transform: translateX(-50%); }
 
-  .cbar { padding: 22px 20px; }
-  .cbar__row { grid-template-columns: 60px 1fr 56px; gap: 12px; }
-  .cbar__head { flex-wrap: wrap; }
+  .cbar { padding: 18px 16px; }
+  .cbar__row { grid-template-columns: 50px 1fr 48px; gap: 10px; }
 
-  .voice { flex: 0 0 88vw; padding: 24px; }
+  .voice { flex: 0 0 88vw; padding: 20px; }
   .voices__rail { padding: 0 16px; }
 
-  .closing__title { font-size: clamp(1.875rem, 8vw, 2.75rem); }
+  .guarantee-banner__seal { width: 120px; height: 120px; }
+  .closing__title { font-size: clamp(1.5rem, 7vw, 2.25rem); }
+  .section { padding: 56px 0; }
 }
 
 @media (max-width: 480px) {
-  .hero__actions { flex-direction: column; align-items: stretch; }
-  .hero__actions .btn { width: 100%; }
-  .hero__product { max-width: 300px; }
-  .kit__qty { font-size: 4rem; }
+  .container { padding: 0 16px; }
+  .nav { padding: 12px 0; }
+  .nav__logo { font-size: 0.875rem; }
+  .nav__toggle { font-size: 1.25rem; padding: 2px 4px; }
+
+  .hero { padding: 90px 0 40px; }
+  .hero__badge { padding: 6px 12px; font-size: 0.625rem; }
+  .hero__title { font-size: clamp(1.375rem, 6vw, 1.875rem); }
+  .hero__sub { font-size: 0.875rem; }
+  .hero__actions { flex-direction: column; gap: 10px; }
+  .hero__actions .btn { width: 100%; padding: 10px 20px; font-size: 0.875rem; }
+  .hero__product { max-width: 260px; }
+  .hero__trust { padding: 8px 12px; font-size: 0.75rem; }
+
+  .bento { grid-template-columns: 1fr; gap: 12px; }
+  .bento__card { padding: 16px 12px; }
+  .bento__card--hero { padding: 24px 16px; }
+  .bento__icon { width: 24px; height: 24px; }
+  .bento__title { font-size: 0.95rem; }
+  .bento__text { font-size: 0.8125rem; }
+
+  .stage { gap: 8px; }
+  .stage__number { font-size: 3rem; }
+  .stage__title { font-size: 1rem; }
+  .stage__text { font-size: 0.85rem; }
+
+  .periodic { gap: 12px; }
+  .atom { padding: 16px; }
+
+  .kit { gap: 12px; padding: 16px; }
+  .kit__qty { font-size: 3rem; }
+  .kit__price-now { font-size: 1.75rem; }
+
+  .voice { flex: 0 0 calc(100vw - 32px); padding: 16px; }
+  .voice__head { gap: 10px; }
+  .voice__avatar { width: 48px; height: 48px; font-size: 1rem; }
+
+  .guarantee-banner { padding: var(--s-2xl) 0; }
+  .guarantee-banner__inner { padding: 24px 16px; gap: 20px; }
+  .guarantee-banner__seal { width: 100px; height: 100px; font-size: 0.875rem; }
+  .guarantee-banner__title { font-size: 1.375rem; }
+
+  .faq__item { padding: 4px 16px; }
+  .faq__q { padding: 16px 0; font-size: 0.9375rem; gap: 12px; }
+  .faq__a { max-height: 300px; }
+
+  .closing { padding: var(--s-2xl) 0; }
+  .closing__title { font-size: clamp(1.25rem, 5vw, 1.875rem); }
+  .closing__text { font-size: 0.9375rem; }
+  .btn { padding: 10px 20px; font-size: 0.875rem; }
+
+  .section { padding: 48px 0; }
 }
