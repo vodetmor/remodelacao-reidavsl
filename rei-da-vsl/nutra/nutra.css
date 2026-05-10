@@ -168,6 +168,7 @@ button { font: inherit; border: none; background: none; cursor: pointer; color: 
   min-height: 100vh;
   display: flex;
   align-items: center;
+  background: #020101;
 }
 .hero__bg { position: absolute; inset: 0; z-index: 0; }
 .hero__gradient {
