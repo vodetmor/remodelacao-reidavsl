@@ -3,250 +3,434 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Serviços | Agência Camaleão</title>
-    
-    <!-- AbacatePay Design System Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@600;700&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="../src/css/design-system.css" />
-    <link rel="stylesheet" href="../src/css/components.css" />
+    <title>Rei da VSL — Infraestrutura de Marketing Digital</title>
+    <meta name="description" content="A solução completa para você escalar com VSLs de alta conversão, tráfego pago e funis automatizados. Tecnologia de performance para negócios que querem crescer." />
     <link rel="stylesheet" href="./servico.css" />
   </head>
-  <body class="page-servico">
-    <!-- ── Header ── -->
-    <header id="header" class="header">
-      <div class="container header__inner">
-        <a href="../index.html" class="header__logo" style="text-decoration: none;">
-          <h2 style="font-weight: 700; letter-spacing: -1.5px; color: var(--color-text); margin: 0; font-size: 1.5rem;">Camaleão.</h2>
-        </a>
-        <nav id="headerNav" class="header__nav">
-          <a href="#solucao" class="nav-link">Nossa Solução</a>
-          <a href="#metodo" class="nav-link">O Método</a>
-          <a href="#casos" class="nav-link">Casos de Sucesso</a>
-        </nav>
-        <div class="header__actions">
-          <a href="#diagnostico" class="btn btn-cta btn-pill">Agendar Diagnóstico</a>
-          <button class="nav-toggle" id="navToggle" aria-label="Abrir Menu">☰</button>
+  <body>
+
+    <!-- ═══════════════════════════════════════
+         NAV
+         ═══════════════════════════════════════ -->
+    <nav class="nav" id="nav">
+      <div class="container nav__inner">
+        <a href="../index.html" class="nav__logo">ReiDaVSL.</a>
+        <div class="nav__links" id="navLinks">
+          <a href="#solucoes" class="nav__link">Soluções</a>
+          <a href="#resultados" class="nav__link">Resultados</a>
+          <a href="#modulos" class="nav__link">Módulos</a>
+          <a href="#depoimento" class="nav__link">Clientes</a>
+          <a href="../formulario.html" class="nav__cta">Fale com a equipe</a>
         </div>
+        <button class="nav__toggle" id="navToggle" aria-label="Menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
       </div>
-    </header>
+    </nav>
 
     <main>
-      <!-- ── Hero Section ── -->
-      <section class="hero-servico">
-        <div class="hero-servico__bg"></div>
-        <div class="container hero-servico__inner">
-          <div class="hero-servico__content reveal">
-            <div class="badge-tag">
-              <span class="badge-dot"></span> Consultoria de Crescimento em Tráfego Pago
+      <!-- ═══════════════════════════════════════
+           HERO
+           ═══════════════════════════════════════ -->
+      <section class="hero">
+        <div class="container">
+          <span class="label hero__label reveal" data-delay="1">Infraestrutura de Marketing Digital</span>
+          <h1 class="hero__title reveal" data-delay="2">
+            A solução ideal para você <em>escalar com performance</em> e a sua marca
+          </h1>
+          <p class="hero__subtitle reveal" data-delay="3">
+            Tenha sua própria operação de marketing com: VSLs de alta conversão, tráfego multi-plataforma, funis automatizados, CRO avançado e analytics em tempo real com a tecnologia Rei da VSL.
+          </p>
+          <div class="hero__actions reveal" data-delay="4">
+            <a href="../formulario.html" class="hero__cta-primary">Agendar demonstração</a>
+            <a href="#solucoes" class="hero__cta-secondary">Saiba mais no fluxo abaixo</a>
+          </div>
+
+          <div class="hero__dashboards reveal--scale" data-delay="5">
+            <img
+              src="./assets/dashboard-vendas.png"
+              alt="Dashboard de vendas e performance"
+              class="hero__dash-img hero__dash-img--main"
+              loading="eager"
+            />
+            <img
+              src="./assets/dashboard-funil.png"
+              alt="Dashboard de funil de conversão"
+              class="hero__dash-img hero__dash-img--side"
+              loading="eager"
+            />
+            <img
+              src="./assets/dashboard-relatorio.png"
+              alt="Relatório de campanhas"
+              class="hero__dash-img hero__dash-img--side"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           BENEFÍCIOS RÁPIDOS
+           ═══════════════════════════════════════ -->
+      <section class="benefits">
+        <div class="container">
+          <div class="benefits__grid">
+            <div class="benefit reveal" data-delay="1">
+              <div class="benefit__icon">
+                <svg viewBox="0 0 24 24"><polyline points="13 17 18 12 13 7"/><polyline points="6 17 11 12 6 7"/></svg>
+              </div>
+              <div>
+                <p class="benefit__title">Aprimore ou Crie</p>
+                <p class="benefit__text">Uma operação de marketing completa em poucos dias. Do zero ao ROI positivo.</p>
+              </div>
             </div>
-            <h1 class="hero-servico__title">
-              Gestão de <span class="text-accent">tráfego e estratégias</span> para empresas que querem <span class="text-accent">aumentar suas vendas</span>.
-            </h1>
-            <p class="hero-servico__subtitle">
-              A Camaleão Agência Digital organiza e otimiza campanhas de tráfego pago para empresas que já possuem operação validada e querem transformar tráfego em crescimento previsível.
+            <div class="benefit reveal" data-delay="2">
+              <div class="benefit__icon">
+                <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <div>
+                <p class="benefit__title">Diminua custos</p>
+                <p class="benefit__text">Operação enxuta com apenas uma equipe. Sem agências fragmentadas, sem retrabalho.</p>
+              </div>
+            </div>
+            <div class="benefit reveal" data-delay="3">
+              <div class="benefit__icon">
+                <svg viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+              </div>
+              <div>
+                <p class="benefit__title">Crie uma nova</p>
+                <p class="benefit__text">Fonte de receita previsível e escalável. Funil validado + tráfego otimizado = escala.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           MARQUEE (Plataformas)
+           ═══════════════════════════════════════ -->
+      <section class="marquee">
+        <div class="marquee__track" aria-hidden="true">
+          <span class="marquee__item">Meta Ads</span>
+          <span class="marquee__item">Google Ads</span>
+          <span class="marquee__item">TikTok Ads</span>
+          <span class="marquee__item">YouTube Ads</span>
+          <span class="marquee__item">Taboola</span>
+          <span class="marquee__item">Kwai Ads</span>
+          <span class="marquee__item">Pinterest</span>
+          <span class="marquee__item">LinkedIn Ads</span>
+          <span class="marquee__item">Meta Ads</span>
+          <span class="marquee__item">Google Ads</span>
+          <span class="marquee__item">TikTok Ads</span>
+          <span class="marquee__item">YouTube Ads</span>
+          <span class="marquee__item">Taboola</span>
+          <span class="marquee__item">Kwai Ads</span>
+          <span class="marquee__item">Pinterest</span>
+          <span class="marquee__item">LinkedIn Ads</span>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           SOLUÇÕES
+           ═══════════════════════════════════════ -->
+      <section class="section" id="solucoes">
+        <div class="container">
+          <div class="section__header">
+            <span class="label reveal">Soluções</span>
+            <h2 class="reveal">Soluções poderosas para todos os tipos de negócio</h2>
+          </div>
+
+          <div class="solutions__grid">
+            <div class="solution-card reveal" data-delay="1">
+              <span class="solution-card__badge">Performance</span>
+              <h3 class="solution-card__title">VSLs de Alta Conversão</h3>
+              <p class="solution-card__text">Roteiro, captação, edição e otimização de Vídeos de Vendas que convertem 3x mais que a média do mercado. Testados com split testing.</p>
+              <a href="../formulario.html" class="solution-card__link">
+                Saiba mais
+                <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+            <div class="solution-card reveal" data-delay="2">
+              <span class="solution-card__badge">Tráfego</span>
+              <h3 class="solution-card__title">Multi-Plataforma Ads</h3>
+              <p class="solution-card__text">Gestão integrada de tráfego pago em Meta, Google, TikTok e YouTube com Smart Routing de orçamento e API de Conversões.</p>
+              <a href="../formulario.html" class="solution-card__link">
+                Saiba mais
+                <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+            <div class="solution-card reveal" data-delay="3">
+              <span class="solution-card__badge">Automação</span>
+              <h3 class="solution-card__title">Funis Automatizados</h3>
+              <p class="solution-card__text">Landing pages, sequências de e-mail, upsells, downsells e order bumps. Arquitetura completa para maximizar o LTV do seu cliente.</p>
+              <a href="../formulario.html" class="solution-card__link">
+                Saiba mais
+                <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           MÉTRICAS
+           ═══════════════════════════════════════ -->
+      <section class="section section--alt" id="resultados">
+        <div class="container">
+          <div class="metrics__grid">
+            <div class="metric reveal" data-delay="1">
+              <p class="metric__prefix">mais de R$</p>
+              <p class="metric__value" data-count="8.4" data-suffix="M">0</p>
+              <p class="metric__unit">faturados</p>
+              <p class="metric__desc">para clientes diretos</p>
+            </div>
+            <div class="metric reveal" data-delay="2">
+              <p class="metric__prefix">mais de</p>
+              <p class="metric__value" data-count="340" data-suffix="%">0</p>
+              <p class="metric__unit">crescimento</p>
+              <p class="metric__desc">médio dos parceiros</p>
+            </div>
+            <div class="metric reveal" data-delay="3">
+              <p class="metric__prefix">ROAS médio</p>
+              <p class="metric__value" data-count="12.4" data-suffix="x">0</p>
+              <p class="metric__unit">retorno</p>
+              <p class="metric__desc">sobre investimento em ads</p>
+            </div>
+            <div class="metric reveal" data-delay="4">
+              <p class="metric__prefix">+</p>
+              <p class="metric__value" data-count="2.1" data-suffix="M">0</p>
+              <p class="metric__unit">visualizações</p>
+              <p class="metric__desc">em VSLs produzidas</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           MÓDULOS EXCLUSIVOS
+           ═══════════════════════════════════════ -->
+      <section class="section" id="modulos">
+        <div class="container">
+          <div class="section__header text-center">
+            <span class="label reveal">Módulos Exclusivos</span>
+            <h2 class="reveal">Adicione Mais Potência<br>Ao Seu Marketing</h2>
+          </div>
+
+          <div class="modules__grid">
+            <div class="module-card reveal" data-delay="1">
+              <img src="./assets/module-analytics.png" alt="Dashboard de vendas" class="module-card__img" loading="lazy" />
+              <div class="module-card__body">
+                <h3 class="module-card__title">Analytics Pro</h3>
+                <p class="module-card__text">Dashboards de performance em tempo real com tracking avançado, heatmaps e atribuição multi-touch para tomada de decisão baseada em dados.</p>
+              </div>
+            </div>
+            <div class="module-card reveal" data-delay="2">
+              <img src="./assets/module-funnel.png" alt="Dashboard de funil" class="module-card__img" loading="lazy" />
+              <div class="module-card__body">
+                <h3 class="module-card__title">Funil Builder</h3>
+                <p class="module-card__text">Construtor de funis de vendas com templates validados, split testing nativo e otimização automática de conversão.</p>
+              </div>
+            </div>
+            <div class="module-card reveal" data-delay="3">
+              <img src="./assets/module-cro.png" alt="Relatório semanal" class="module-card__img" loading="lazy" />
+              <div class="module-card__body">
+                <h3 class="module-card__title">CRO Engine</h3>
+                <p class="module-card__text">Motor de otimização contínua: testes A/B automatizados, análise de comportamento e recomendações de melhoria baseadas em IA.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           API / PROCESSO
+           ═══════════════════════════════════════ -->
+      <section class="section section--alt">
+        <div class="container">
+          <div class="api-section">
+            <div class="api-section__content reveal--left">
+              <span class="label api-section__label">Sobre o Processo</span>
+              <h2 class="api-section__title">Metodologia feita para resultados</h2>
+              <p class="api-section__text">
+                Nosso processo é estruturado em 4 fases: Discovery, Arquitetura, Execução e Escala. Cada etapa tem entregáveis claros, KPIs definidos e checkpoints de validação com você.
+              </p>
+              <a href="../formulario.html" class="api-section__link">
+                Agendar diagnóstico gratuito
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </a>
+            </div>
+            <div class="api-section__visual reveal--right">
+              <img src="./assets/dashboard-relatorio.png" alt="Processo de trabalho" class="api-section__img" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════
+           DEPOIMENTO
+           ═══════════════════════════════════════ -->
+      <section class="section" id="depoimento">
+        <div class="container">
+          <div class="section__header text-center">
+            <span class="label reveal">Clientes</span>
+            <h2 class="reveal">Depoimentos</h2>
+          </div>
+
+          <div class="testimonial reveal">
+            <p class="testimonial__text">
+              "A equipe do Rei da VSL montou toda a nossa operação de marketing do zero. Em 60 dias, saímos de R$30k para R$180k de faturamento mensal. A VSL que criaram converte absurdamente — o funil todo é uma máquina."
             </p>
-            
-            <div class="hero-servico__metrics">
-              <div class="metric">
-                <h3>+6 Milhões</h3>
-                <p>gerenciados em tráfego pago</p>
-              </div>
-              <div class="metric">
-                <h3>+R$ 25 Milhões</h3>
-                <p>em vendas geradas</p>
-              </div>
-              <div class="metric">
-                <h3>+120</h3>
-                <p>empresas atendidas</p>
-              </div>
-            </div>
-
-            <div class="hero-servico__actions">
-              <a href="#diagnostico" class="btn btn-cta btn-pill btn-large shadow-hover">Agendar diagnóstico de crescimento</a>
-            </div>
-          </div>
-          
-          <div class="hero-servico__visual reveal" style="transition-delay: 0.2s">
-            <div class="dashboard-mockup">
-              <img src="/images/resultado.png" alt="Dashboard de receita mostrando crescimento escalável" loading="lazy" />
-              <div class="floating-badge badge-right">
-                <span class="label">Conversão</span>
-                <span class="value text-success">+327%</span>
-              </div>
-              <div class="floating-badge badge-left">
-                <span class="label">ROI</span>
-                <span class="value text-accent">8.5x</span>
+            <div class="testimonial__author">
+              <div class="testimonial__avatar">M</div>
+              <div>
+                <p class="testimonial__name">Marcos P.</p>
+                <p class="testimonial__role">Infoprodutor — R$200k/mês</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ── Contexto do Problema ── -->
-      <section class="section problem-section" id="solucao">
-        <div class="container text-center">
-          <h2 class="section__title reveal">
-            Escalar tráfego pago exige <br class="hidden-mobile" />
-            <span class="text-accent">mais do que investir mais.</span>
-          </h2>
-          <p class="section__subtitle reveal" style="transition-delay: 0.1s">
-            Muitas empresas aumentam o investimento em anúncios sem uma fundação forte de aquisição. Isso normalmente gera:
-          </p>
-
-          <div class="grid-3 problem-cards reveal" style="transition-delay: 0.2s">
-            <div class="card card-clean">
-              <div class="card__icon card-icon-red">
-                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6"></path></svg>
-              </div>
-              <h3 class="card__title">CAC Crescente</h3>
-            </div>
-            <div class="card card-clean">
-              <div class="card__icon card-icon-red">
-                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-              </div>
-              <h3 class="card__title">Resultados Inconsistentes</h3>
-            </div>
-            <div class="card card-clean">
-              <div class="card__icon card-icon-red">
-                <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-              </div>
-              <h3 class="card__title">Dificuldade de Escala</h3>
-            </div>
-          </div>
-
-          <div class="problem-highlight reveal" style="transition-delay: 0.3s">
-            <p>Quando campanhas são estruturadas corretamente, o tráfego pago se transforma em um <span class="text-accent">motor de crescimento previsível.</span></p>
-          </div>
-        </div>
-      </section>
-
-      <!-- ── O Método ── -->
-      <section class="section method-section bg-alt" id="metodo">
+      <!-- ═══════════════════════════════════════
+           CTA FINAL
+           ═══════════════════════════════════════ -->
+      <section class="section">
         <div class="container">
-          <div class="text-center mb-xl">
-            <div class="badge-tag mx-auto mb-sm"><span class="badge-dot"></span> Nossa Metodologia</div>
-            <h2 class="section__title reveal">Como estruturamos sua aquisição</h2>
-            <p class="section__subtitle reveal">Um processo validado em múltiplos nichos para escalar com segurança.</p>
-          </div>
-
-          <div class="grid-2 method-grid">
-            <div class="method-card reveal">
-              <div class="method-card__number">01</div>
-              <h3>Diagnóstico e Auditoria</h3>
-              <p>Mapeamos o gargalo atual da sua operação, analisamos os dados históricos e validamos a infraestrutura de tagueamento e tracking.</p>
+          <div class="cta-final reveal">
+            <div>
+              <span class="label">Entre em contato</span>
+              <h2 class="cta-final__title">Crie o futuro do seu <em>marketing</em> com a gente</h2>
+              <p class="cta-final__text">
+                Agende um diagnóstico gratuito de 30 minutos. Analisamos seu funil, tráfego e operação — e mostramos exatamente onde está o dinheiro que você está deixando na mesa.
+              </p>
+              <a href="../formulario.html" class="hero__cta-primary">Quero saber mais</a>
             </div>
-            <div class="method-card reveal" style="transition-delay: 0.1s">
-              <div class="method-card__number">02</div>
-              <h3>Planejamento Estratégico</h3>
-              <p>Definição de orçamento, projeção de CAC e ROAS alvo, e estruturação de funil com foco em aquisição e LTV.</p>
-            </div>
-            <div class="method-card reveal" style="transition-delay: 0.2s">
-              <div class="method-card__number">03</div>
-              <h3>Testes e Escala Vertical/Horizontal</h3>
-              <p>Validação de públicos e criativos em ambiente controlado, seguido por aumento orçamentário seguro nos conjuntos vencedores.</p>
-            </div>
-            <div class="method-card reveal" style="transition-delay: 0.3s">
-              <div class="method-card__number">04</div>
-              <h3>Otimização Contínua</h3>
-              <p>Análise diária de dados, melhoria nas taxas de conversão da página de destino e refinamento de oferta para baixar o CAC.</p>
-            </div>
+            <img src="./assets/dashboard-vendas.png" alt="Dashboard de performance" class="cta-final__img" loading="lazy" />
           </div>
         </div>
       </section>
-
-      <!-- ── Comparação ── -->
-      <section class="section comparison-section" id="comparacao">
-        <div class="container">
-          <div class="text-center mb-xl">
-            <h2 class="section__title reveal">
-              Por que empresas escalam com a <span class="text-accent">Camaleão</span>
-            </h2>
-            <p class="section__subtitle reveal">Não somos apenas operadores de anúncios. Atuamos na estrutura completa de aquisição.</p>
-          </div>
-
-          <div class="grid-2 comparison-grid reveal" style="transition-delay: 0.1s">
-            <div class="comparison-card card-negative">
-              <h3>Agência Comum</h3>
-              <ul>
-                <li><span>❌</span> Foco em CPC</li>
-                <li><span>❌</span> Campanhas isoladas</li>
-                <li><span>❌</span> Relatórios pouco claros</li>
-                <li><span>❌</span> Estratégia desconectada do negócio</li>
-              </ul>
-            </div>
-            <div class="comparison-card card-positive">
-              <h3>Agência Camaleão</h3>
-              <ul>
-                <li><span>✅</span> Decisões baseadas em lucro e CAC</li>
-                <li><span>✅</span> Estratégia conectada ao funil de vendas</li>
-                <li><span>✅</span> Testes estruturados de criativos e públicos</li>
-                <li><span>✅</span> Dashboards claros focados em ROI</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ── FAQ ── -->
-      <section class="section faq-section" id="faq">
-        <div class="container container--narrow">
-          <h2 class="section__title text-center mb-xl reveal">Perguntas <span class="text-accent">frequentes</span></h2>
-          <div class="faq-accordion reveal" style="transition-delay: 0.1s">
-            <details class="faq-item">
-              <summary>Em quanto tempo começo a ter dados relevantes nas campanhas?</summary>
-              <p>Isso depende do modelo de negócio, verba, oferta e volume de teste. O ponto principal é que acompanhamos a evolução desde o início para tomar decisões com base no comportamento real da operação.</p>
-            </details>
-            <details class="faq-item">
-              <summary>Vocês atendem qualquer tipo de negócio?</summary>
-              <p>Hoje nosso foco está principalmente em e-commerce, infoprodutos e negócios locais, onde já temos experiência prática de operação.</p>
-            </details>
-            <details class="faq-item">
-              <summary>Vocês também cuidam da copy dos anúncios?</summary>
-              <p>Sim. Ajudamos na construção das mensagens das campanhas para que a comunicação esteja alinhada com o público e com o objetivo da operação.</p>
-            </details>
-            <details class="faq-item">
-              <summary>Existe investimento mínimo em mídia?</summary>
-              <p>O valor depende do tipo de operação e do objetivo de crescimento. Isso é avaliado na análise inicial.</p>
-            </details>
-            <details class="faq-item">
-              <summary>Como funciona o início do trabalho?</summary>
-              <p>O primeiro passo é entender a operação, analisar o cenário atual e definir a estrutura inicial de campanhas.</p>
-            </details>
-          </div>
-        </div>
-      </section>
-
-      <!-- ── CTA Diagnóstico ── -->
-      <section class="section diagnosis-section text-center" id="diagnostico">
-        <div class="container container--narrow">
-          <h2 class="section__title reveal">Pronto para acelerar seu crescimento?</h2>
-          <p class="section__subtitle reveal" style="transition-delay: 0.1s">
-            Agende uma sessão estratégica gratuita. Vamos analisar sua operação atual e desenhar um plano de ação personalizado.
-          </p>
-          <div class="reveal" style="transition-delay: 0.2s">
-            <a href="../formulario.html" class="btn btn-cta btn-pill btn-large shadow-hover mt-md">Agendar Diagnóstico Estratégico</a>
-          </div>
-        </div>
-      </section>
-
-      <!-- ── Footer ── -->
-      <footer class="footer-clean">
-        <div class="container">
-          <div class="footer-clean__inner">
-            <p>&copy; 2025 Agência Camaleão. Todos os direitos reservados.</p>
-            <div class="footer-clean__links">
-              <a href="#">Termos de Uso</a>
-              <a href="#">Política de Privacidade</a>
-            </div>
-          </div>
-        </div>
-      </footer>
     </main>
 
-    <!-- Scripts Compartilhados -->
-    <script src="../src/js/main.js" type="module"></script>
+    <!-- ═══════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__copy">&copy; 2025 Rei da VSL. Todos os direitos reservados.</p>
+        <div class="footer__links">
+          <a href="#" class="footer__link">Política de Privacidade</a>
+          <a href="#" class="footer__link">Termos de Uso</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      /* ═══════════════════════════════════════
+         ANIMATIONS & INTERACTIVITY ENGINE
+         ═══════════════════════════════════════ */
+
+      /* 1. Reveal on Scroll — all variants */
+      const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            /* Trigger counter animation for metrics */
+            const counters = entry.target.querySelectorAll('[data-count]');
+            if (counters.length) counters.forEach(c => animateCounter(c));
+            if (entry.target.hasAttribute('data-count')) animateCounter(entry.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -50px 0px' });
+
+      document.querySelectorAll('.reveal, .reveal--left, .reveal--right, .reveal--scale').forEach(el => {
+        revealObserver.observe(el);
+      });
+
+      /* 2. Counter Animation (smooth easing) */
+      function animateCounter(el) {
+        if (el.dataset.animated) return;
+        el.dataset.animated = 'true';
+        const target = parseFloat(el.dataset.count);
+        const suffix = el.dataset.suffix || '';
+        const isDecimal = target % 1 !== 0;
+        const duration = 2000;
+        const start = performance.now();
+
+        function easeOutExpo(t) { return t === 1 ? 1 : 1 - Math.pow(2, -10 * t); }
+
+        function tick(now) {
+          const elapsed = now - start;
+          const progress = Math.min(elapsed / duration, 1);
+          const eased = easeOutExpo(progress);
+          const current = target * eased;
+          el.textContent = (isDecimal ? current.toFixed(1) : Math.floor(current)) + suffix;
+          if (progress < 1) requestAnimationFrame(tick);
+        }
+        requestAnimationFrame(tick);
+      }
+
+      /* 3. Nav Shrink on Scroll */
+      const nav = document.getElementById('nav');
+      let lastScroll = 0;
+      window.addEventListener('scroll', () => {
+        const y = window.scrollY;
+        if (y > 80) {
+          nav.classList.add('nav--scrolled');
+          nav.style.background = 'rgba(0,0,0,0.95)';
+        } else {
+          nav.classList.remove('nav--scrolled');
+          nav.style.background = 'rgba(0,0,0,0.8)';
+        }
+        lastScroll = y;
+      }, { passive: true });
+
+      /* 4. Mobile Nav Toggle */
+      const navToggle = document.getElementById('navToggle');
+      const navLinks = document.getElementById('navLinks');
+      if (navToggle) {
+        navToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+      }
+
+      /* 5. Smooth Scroll for Anchor Links */
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', (e) => {
+          const id = a.getAttribute('href');
+          if (id.length <= 1) return;
+          e.preventDefault();
+          const target = document.querySelector(id);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            /* Close mobile nav if open */
+            navLinks.classList.remove('active');
+          }
+        });
+      });
+
+      /* 6. Card Tilt Effect (subtle 3D on hover) */
+      document.querySelectorAll('.solution-card, .module-card').forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+          const rect = card.getBoundingClientRect();
+          const x = (e.clientX - rect.left) / rect.width - 0.5;
+          const y = (e.clientY - rect.top) / rect.height - 0.5;
+          card.style.transform = `translateY(-6px) perspective(600px) rotateX(${-y * 4}deg) rotateY(${x * 4}deg)`;
+        });
+        card.addEventListener('mouseleave', () => {
+          card.style.transform = '';
+        });
+      });
+
+      /* 7. Parallax on Dashboard Images */
+      const dashboards = document.querySelector('.hero__dashboards');
+      if (dashboards) {
+        window.addEventListener('scroll', () => {
+          const rect = dashboards.getBoundingClientRect();
+          if (rect.top < window.innerHeight && rect.bottom > 0) {
+            const progress = (window.innerHeight - rect.top) / (window.innerHeight + rect.height);
+            const offset = (progress - 0.5) * 20;
+            dashboards.style.transform = `translateY(${offset}px)`;
+          }
+        }, { passive: true });
+      }
+    </script>
   </body>
 </html>

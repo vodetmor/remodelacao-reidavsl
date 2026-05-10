@@ -3,135 +3,591 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Encapsulados & Saúde | Rei da VSL</title>
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@500;700;800&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="../src/css/design-system.css" />
-    <link rel="stylesheet" href="../src/css/components.css" />
+    <title>Blessed — Reset da sua biologia | Rei da VSL</title>
+    <meta name="description" content="A fadiga não é sua identidade. É química — e tem reset. Blessed reverte o ciclo de cortisol e dopamina em 14 dias com adaptógenos, nootrópicos e minerais quelados." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./nutra.css" />
   </head>
-  <body class="page-nutra">
-    <!-- ── Header ── -->
-    <header id="header" class="header header-clinical">
-      <div class="container header__inner">
-        <a href="../index.html" class="header__logo" style="text-decoration: none;">
-          <h2 style="font-weight: 800; letter-spacing: -1px; color: var(--color-clinical-blue); margin: 0; font-size: 1.5rem;">NutraVSL.</h2>
-        </a>
-        <nav id="headerNav" class="header__nav">
-          <a href="#tecnologia" class="nav-link">Tecnologia</a>
-          <a href="#beneficios" class="nav-link">Benefícios</a>
-          <a href="#garantia" class="nav-link">Garantia</a>
+  <body>
+    <!-- ── Nav ── -->
+    <header id="nav" class="nav">
+      <div class="container nav__inner">
+        <a href="../index.html" class="nav__logo">ReiDaVSL.</a>
+        <nav id="navLinks" class="nav__links">
+          <a href="#sintomas" class="nav__link">Sintomas</a>
+          <a href="#mecanismo" class="nav__link">Mecanismo</a>
+          <a href="#ingredientes" class="nav__link">Fórmula</a>
+          <a href="#kits" class="nav__link">Kits</a>
+          <a href="#faq" class="nav__link">FAQ</a>
         </nav>
-        <div class="header__actions">
-          <a href="../formulario.html" class="btn btn-cta-gold">Pedir Consultoria</a>
-          <button class="nav-toggle" id="navToggle" aria-label="Abrir Menu">☰</button>
+        <div class="nav__actions">
+          <a href="#kits" class="btn btn-primary">Reverter agora</a>
+          <button class="nav__toggle" id="navToggle" aria-label="Menu">☰</button>
         </div>
       </div>
     </header>
 
     <main>
-      <!-- ── Hero Section ── -->
-      <section class="hero-nutra">
-        <div class="container hero-nutra__inner">
-          <div class="hero-nutra__content reveal">
-            <div class="trust-badge">
-              <span>Aprovado Cientificamente</span>
-            </div>
-            <h1 class="hero-nutra__title">
-              Escala de <span class="text-clinical-blue">Nutracêuticos</span> com Alta Performance.
-            </h1>
-            <p class="hero-nutra__subtitle">
-              Criamos VSLs de altíssima conversão e funis blindados contra bloqueios (Contingência Avançada) para encapsulados e infoprodutos de saúde.
-            </p>
-            
-            <div class="hero-nutra__benefits">
-              <ul>
-                <li><span>✓</span> Copywriting baseado em dor e alívio clínico</li>
-                <li><span>✓</span> Esteira de Order Bumps (Kits 3x e 5x)</li>
-                <li><span>✓</span> Estrutura imune a bloqueios no Facebook Ads</li>
-              </ul>
-            </div>
-
-            <div class="hero-nutra__actions mt-md">
-              <a href="#diagnostico" class="btn btn-cta-gold btn-large">Alavancar Minhas Vendas</a>
-              <div class="safe-checkout mt-sm">
-                <span style="font-size: 0.75rem; color: #64748b;">🔒 Processo 100% seguro e confidencial</span>
-              </div>
-            </div>
-          </div>
-          
-          <div class="hero-nutra__visual reveal" style="transition-delay: 0.2s">
-            <!-- Representação visual estilo Pote/Caixa de Encapsulado -->
-            <div class="product-mockup">
-              <div class="bottle-shape">
-                <div class="bottle-cap"></div>
-                <div class="bottle-body">
-                  <div class="bottle-label">
-                    <div class="label-logo">NutraVSL</div>
-                    <div class="label-text">Fórmula Premium</div>
-                  </div>
-                </div>
-              </div>
-              <div class="seal-badge">
-                <span>Eficácia</span>
-                <strong>Comprovada</strong>
-              </div>
-            </div>
-          </div>
+      <!-- ══════════════════════════════════════════════
+           1. HERO — Asymmetric 60/40
+           ══════════════════════════════════════════════ -->
+      <section class="hero" id="hero">
+        <div class="hero__bg">
+          <div class="hero__gradient"></div>
+          <div class="hero__grain"></div>
         </div>
-      </section>
-
-      <!-- ── Section Trust ── -->
-      <section class="trust-section bg-light-blue" id="tecnologia">
-        <div class="container text-center">
-          <h2 class="section__title reveal text-clinical-blue">A Anatomia de um <span class="text-gold">Funil Vencedor</span></h2>
-          <p class="section__subtitle reveal" style="transition-delay: 0.1s">
-            No mercado de saúde, a credibilidade é a moeda mais cara. Estruturamos sua oferta com autoridade médica simulada e gatilhos de segurança.
-          </p>
-
-          <div class="grid-3 reveal mt-xl" style="transition-delay: 0.2s">
-            <div class="clinical-card">
-              <div class="icon-circle">🛡️</div>
-              <h3>Contingência Robusta</h3>
-              <p>Aquecimento de perfis, cloaking ético e estrutura multi-contas para rodar ofertas agressivas de saúde sem cair a operação.</p>
-            </div>
-            <div class="clinical-card">
-              <div class="icon-circle">🔬</div>
-              <h3>Mecanismo Único Científico</h3>
-              <p>Construção de uma tese lógica (A Nova Descoberta de Harvard) para justificar a eficácia da sua fórmula perante o público.</p>
-            </div>
-            <div class="clinical-card">
-              <div class="icon-circle">📈</div>
-              <h3>Upsell One-Click</h3>
-              <p>Triplique o AOV oferecendo kits de tratamento prolongado imediatamente após a conversão do primeiro pote.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ── CTA Final ── -->
-      <section class="section diagnosis-section text-center" id="diagnostico">
-        <div class="container container--narrow">
-          <h2 class="section__title reveal text-clinical-blue">Traga seu encapsulado para a <span class="text-gold">escala de milhões</span>.</h2>
-          <div class="reveal" style="transition-delay: 0.2s">
-            <a href="../formulario.html" class="btn btn-cta-gold btn-large shadow-hover mt-md">Falar com Consultor</a>
-          </div>
-        </div>
-      </section>
-
-      <footer class="footer-clinical">
         <div class="container">
-          <div class="footer-clinical__inner">
-            <p>&copy; 2025 Rei da VSL - Nutra. Aviso: Nossos serviços focam em estratégias de marketing digital. Não fornecemos aconselhamento médico.</p>
+          <div class="hero__grid">
+            <div class="hero__content">
+              <div class="hero__badge reveal" data-delay="1">
+                <span class="hero__badge-pulse"></span>
+                Reset da sua biologia
+              </div>
+              <h1 class="hero__title reveal" data-delay="2">
+                A fadiga não é sua identidade.
+                <span class="hero__title-accent">É química &mdash; e tem reset.</span>
+              </h1>
+              <p class="hero__sub reveal" data-delay="3">
+                Você acorda cansado, depende de café pra funcionar e perde foco depois das 14h. Blessed reverte o ciclo de cortisol e dopamina em 14 dias — adaptógenos, nootrópicos e minerais quelados em uma única fórmula.
+              </p>
+              <div class="hero__actions reveal" data-delay="4">
+                <a href="#kits" class="btn btn-primary btn-lg">Reverter agora →</a>
+                <a href="#mecanismo" class="btn btn-ghost">Ver mecanismo</a>
+              </div>
+              <div class="hero__trust reveal" data-delay="5">
+                <div class="hero__trust-item"><strong>+8.700</strong> reset realizados</div>
+                <div class="hero__trust-divider"></div>
+                <div class="hero__trust-item"><strong>4.8/5</strong> ★★★★★</div>
+                <div class="hero__trust-divider"></div>
+                <div class="hero__trust-item"><strong>90 dias</strong> de garantia</div>
+              </div>
+            </div>
+            <div class="hero__visual reveal--scale" data-delay="3">
+              <div class="hero__orb hero__orb--lg"></div>
+              <div class="hero__orb hero__orb--sm"></div>
+              <img
+                src="./assets/blessed-mockup.png"
+                alt="Blessed — 3 frascos premium"
+                class="hero__product"
+                loading="eager"
+              />
+            </div>
           </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════
+           2. SINTOMAS — Bento Grid
+           ══════════════════════════════════════════════ -->
+      <section class="section symptoms" id="sintomas">
+        <div class="container">
+          <div class="section__head">
+            <span class="section__eyebrow reveal">Diagnóstico</span>
+            <h2 class="section__title reveal">O que você sente hoje<br/><span class="text-accent">não é normal &mdash; é química.</span></h2>
+          </div>
+
+          <div class="bento">
+            <article class="bento__card bento__card--hero reveal" data-delay="1">
+              <div class="bento__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v9l5 3"/></svg>
+              </div>
+              <h3 class="bento__title">Acordar cansado mesmo após 8h de sono</h3>
+              <p class="bento__text">Cortisol elevado durante a madrugada. Seu corpo dorme, mas o sistema nervoso não desliga. Resultado: você levanta exausto antes mesmo do dia começar.</p>
+              <div class="bento__metric"><span class="bento__metric-value">73%</span><span class="bento__metric-label">dos brasileiros relatam isso</span></div>
+            </article>
+
+            <article class="bento__card reveal" data-delay="2">
+              <div class="bento__icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="3 17 9 11 13 15 21 7"/><polyline points="14 7 21 7 21 14"/></svg>
+              </div>
+              <h3 class="bento__title">Crash das 14h</h3>
+              <p class="bento__text">Glicemia desregulada pós-almoço. Foco evapora, produtividade cai pela metade.</p>
+            </article>
+
+            <article class="bento__card reveal" data-delay="3">
+              <div class="bento__icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+              </div>
+              <h3 class="bento__title">Mente embaçada</h3>
+              <p class="bento__text">Neuroinflamação crônica. Pensamentos lentos, memória curta, piloto automático.</p>
+            </article>
+
+            <article class="bento__card reveal" data-delay="4">
+              <div class="bento__icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+              </div>
+              <h3 class="bento__title">Sono fragmentado</h3>
+              <p class="bento__text">Magnésio baixo + cortisol noturno. Você acorda 2-3 vezes sem perceber. Cansaço acumula.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════
+           3. MECANISMO — Sticky scroll com 3 stages
+           ══════════════════════════════════════════════ -->
+      <section class="section mechanism" id="mecanismo">
+        <div class="container">
+          <div class="section__head">
+            <span class="section__eyebrow reveal">Como funciona</span>
+            <h2 class="section__title reveal">3 vetores bioquímicos.<br/><span class="text-accent">1 fórmula que sincroniza os três.</span></h2>
+          </div>
+
+          <div class="mechanism__stages">
+            <article class="stage reveal--left" data-delay="1">
+              <div class="stage__number">01</div>
+              <div class="stage__body">
+                <span class="stage__tag">Adaptógenos</span>
+                <h3 class="stage__title">Eixo HPA recalibrado</h3>
+                <p class="stage__text">Ashwagandha KSM-66 e Rhodiola Rosea atuam diretamente no eixo hipotálamo-pituitária-adrenal, regulando a curva diária de cortisol em 7 a 14 dias. Mente desinflama. O estresse volta a ser sinal, não ruído de fundo permanente.</p>
+                <div class="stage__chip">Cortisol -27% em 60 dias <span>· Estudo KSM-66, 2019</span></div>
+              </div>
+            </article>
+
+            <article class="stage stage--reverse reveal--right" data-delay="1">
+              <div class="stage__number">02</div>
+              <div class="stage__body">
+                <span class="stage__tag">Nootrópicos</span>
+                <h3 class="stage__title">Neuroplasticidade ativa</h3>
+                <p class="stage__text">Lion's Mane (Hericium erinaceus) estimula a produção de NGF (Nerve Growth Factor) e BDNF — fatores responsáveis pela manutenção e crescimento de neurônios. Foco volta. Memória clareia. Curva de aprendizado acelera.</p>
+                <div class="stage__chip">Foco contínuo +120% <span>· Universidade de Tóquio, 2009</span></div>
+              </div>
+            </article>
+
+            <article class="stage reveal--left" data-delay="1">
+              <div class="stage__number">03</div>
+              <div class="stage__body">
+                <span class="stage__tag">Minerais quelados</span>
+                <h3 class="stage__title">Sono profundo restaurado</h3>
+                <p class="stage__text">Magnésio L-Treonato é a única forma de magnésio que atravessa a barreira hematoencefálica de forma significativa. Aumenta densidade sináptica durante o sono REM. Você dorme mais profundo. Recuperação cerebral real — não compensação por estimulante.</p>
+                <div class="stage__chip">Sono profundo +180% <span>· MIT, 2010</span></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════
+           4. INGREDIENTES — Periodic Table Grid
+           ══════════════════════════════════════════════ -->
+      <section class="section formula" id="ingredientes">
+        <div class="container">
+          <div class="section__head">
+            <span class="section__eyebrow reveal">Fórmula</span>
+            <h2 class="section__title reveal">6 ativos. <span class="text-accent">Doses validadas em estudo.</span></h2>
+            <p class="section__sub reveal">Sem fillers. Sem mascaramento. Cada ativo na concentração testada clinicamente — não na dose mínima legal.</p>
+          </div>
+
+          <div class="periodic">
+            <article class="atom reveal" data-delay="1">
+              <span class="atom__symbol">Ash</span>
+              <span class="atom__index">01</span>
+              <h3 class="atom__name">Ashwagandha KSM-66</h3>
+              <p class="atom__desc">Adaptógeno raiz. Ayurveda há 3.000 anos. Reduz cortisol até 27%.</p>
+              <span class="atom__dose">600&nbsp;mg</span>
+            </article>
+
+            <article class="atom reveal" data-delay="2">
+              <span class="atom__symbol">Lm</span>
+              <span class="atom__index">02</span>
+              <h3 class="atom__name">Lion's Mane</h3>
+              <p class="atom__desc">Cogumelo nootrópico. Estimula NGF e BDNF. Foco e neuroplasticidade.</p>
+              <span class="atom__dose">500&nbsp;mg</span>
+            </article>
+
+            <article class="atom reveal" data-delay="3">
+              <span class="atom__symbol">Rh</span>
+              <span class="atom__index">03</span>
+              <h3 class="atom__name">Rhodiola Rosea</h3>
+              <p class="atom__desc">Adaptógeno escandinavo. Resistência ao estresse. Energia sem pico.</p>
+              <span class="atom__dose">300&nbsp;mg</span>
+            </article>
+
+            <article class="atom reveal" data-delay="4">
+              <span class="atom__symbol">MgT</span>
+              <span class="atom__index">04</span>
+              <h3 class="atom__name">Magnésio L-Treonato</h3>
+              <p class="atom__desc">Único Mg que cruza a barreira hematoencefálica. Sono profundo.</p>
+              <span class="atom__dose">144&nbsp;mg</span>
+            </article>
+
+            <article class="atom reveal" data-delay="5">
+              <span class="atom__symbol">D₃·K₂</span>
+              <span class="atom__index">05</span>
+              <h3 class="atom__name">Vitamina D3 + K2</h3>
+              <p class="atom__desc">Sinergia que direciona cálcio aos ossos. Imunidade e mood.</p>
+              <span class="atom__dose">2.000&nbsp;UI</span>
+            </article>
+
+            <article class="atom reveal" data-delay="6">
+              <span class="atom__symbol">Zn</span>
+              <span class="atom__index">06</span>
+              <h3 class="atom__name">Zinco Quelado</h3>
+              <p class="atom__desc">Forma bisglicinato bioativa. Testosterona, imunidade e cognição.</p>
+              <span class="atom__dose">15&nbsp;mg</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════
+           5. ANTES/DEPOIS — Stats Bar
+           ══════════════════════════════════════════════ -->
+      <section class="section comparison">
+        <div class="container">
+          <div class="section__head">
+            <span class="section__eyebrow reveal">Antes &amp; depois</span>
+            <h2 class="section__title reveal">A diferença em 90 dias <span class="text-accent">não é percebida. É medida.</span></h2>
+          </div>
+
+          <div class="comparison__bars">
+            <div class="cbar reveal" data-delay="1">
+              <div class="cbar__head">
+                <span class="cbar__label">Energia consistente das 7h às 22h</span>
+                <span class="cbar__delta">+146%</span>
+              </div>
+              <div class="cbar__pair">
+                <div class="cbar__row"><span class="cbar__tag">Antes</span><div class="cbar__track"><div class="cbar__fill cbar__fill--before" style="--w:35%"></div></div><span class="cbar__num">35%</span></div>
+                <div class="cbar__row"><span class="cbar__tag cbar__tag--after">Depois</span><div class="cbar__track"><div class="cbar__fill cbar__fill--after" style="--w:86%"></div></div><span class="cbar__num">86%</span></div>
+              </div>
+            </div>
+
+            <div class="cbar reveal" data-delay="2">
+              <div class="cbar__head">
+                <span class="cbar__label">Foco contínuo (horas/dia)</span>
+                <span class="cbar__delta">+120%</span>
+              </div>
+              <div class="cbar__pair">
+                <div class="cbar__row"><span class="cbar__tag">Antes</span><div class="cbar__track"><div class="cbar__fill cbar__fill--before" style="--w:32%"></div></div><span class="cbar__num">2,5h</span></div>
+                <div class="cbar__row"><span class="cbar__tag cbar__tag--after">Depois</span><div class="cbar__track"><div class="cbar__fill cbar__fill--after" style="--w:78%"></div></div><span class="cbar__num">5,5h</span></div>
+              </div>
+            </div>
+
+            <div class="cbar reveal" data-delay="3">
+              <div class="cbar__head">
+                <span class="cbar__label">Sono profundo por noite</span>
+                <span class="cbar__delta">+183%</span>
+              </div>
+              <div class="cbar__pair">
+                <div class="cbar__row"><span class="cbar__tag">Antes</span><div class="cbar__track"><div class="cbar__fill cbar__fill--before" style="--w:24%"></div></div><span class="cbar__num">1,2h</span></div>
+                <div class="cbar__row"><span class="cbar__tag cbar__tag--after">Depois</span><div class="cbar__track"><div class="cbar__fill cbar__fill--after" style="--w:72%"></div></div><span class="cbar__num">3,4h</span></div>
+              </div>
+            </div>
+
+            <div class="cbar reveal" data-delay="4">
+              <div class="cbar__head">
+                <span class="cbar__label">Cafés por dia</span>
+                <span class="cbar__delta cbar__delta--neg">−75%</span>
+              </div>
+              <div class="cbar__pair">
+                <div class="cbar__row"><span class="cbar__tag">Antes</span><div class="cbar__track"><div class="cbar__fill cbar__fill--before" style="--w:80%"></div></div><span class="cbar__num">4 xíc.</span></div>
+                <div class="cbar__row"><span class="cbar__tag cbar__tag--after">Depois</span><div class="cbar__track"><div class="cbar__fill cbar__fill--after" style="--w:20%"></div></div><span class="cbar__num">1 xíc.</span></div>
+              </div>
+            </div>
+          </div>
+
+          <p class="comparison__note reveal">Médias de 247 usuários após 90 dias de protocolo. Auto-relato + apps de tracking.</p>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════
+           6. KITS — Layout Horizontal
+           ══════════════════════════════════════════════ -->
+      <section class="section kits" id="kits">
+        <div class="container">
+          <div class="section__head">
+            <span class="section__eyebrow reveal">Protocolo</span>
+            <h2 class="section__title reveal">Escolha o seu <span class="text-accent">vetor de transformação.</span></h2>
+            <p class="section__sub reveal">Cada kit foi desenhado em torno de um objetivo biológico distinto — não de margem.</p>
+          </div>
+
+          <div class="kits__list">
+            <article class="kit reveal--left" data-delay="1">
+              <div class="kit__visual">
+                <span class="kit__qty">1</span>
+                <span class="kit__qty-unit">pote · 30 dias</span>
+              </div>
+              <div class="kit__info">
+                <span class="kit__tag">Testar</span>
+                <h3 class="kit__title">Sentir a primeira mudança</h3>
+                <p class="kit__text">Em 14 dias você nota energia mais estável e mente mais limpa. Para validar antes de comprometer um ciclo completo.</p>
+                <ul class="kit__list">
+                  <li>Frete grátis</li>
+                  <li>Garantia 90 dias</li>
+                </ul>
+              </div>
+              <div class="kit__price">
+                <span class="kit__price-old">R$ 197,00</span>
+                <span class="kit__price-now">R$ 147</span>
+                <span class="kit__price-unit">R$ 147 / pote</span>
+                <a href="#" class="btn btn-primary btn-block">Começar testar</a>
+              </div>
+            </article>
+
+            <article class="kit kit--featured reveal--right" data-delay="2">
+              <span class="kit__highlight">Recomendado · 90 dias</span>
+              <div class="kit__visual">
+                <span class="kit__qty">3</span>
+                <span class="kit__qty-unit">potes · 90 dias</span>
+              </div>
+              <div class="kit__info">
+                <span class="kit__tag kit__tag--accent">Transformar</span>
+                <h3 class="kit__title">Protocolo completo de reset</h3>
+                <p class="kit__text">90 dias é o tempo que sua biologia precisa para resetar o eixo cortisol-dopamina e consolidar neuroplasticidade. É aqui que a mudança vira identidade.</p>
+                <ul class="kit__list">
+                  <li>Frete expresso grátis</li>
+                  <li>Bônus: protocolo de sono em PDF</li>
+                  <li>Bônus: ritual matinal guiado</li>
+                  <li>Garantia 90 dias</li>
+                </ul>
+              </div>
+              <div class="kit__price">
+                <span class="kit__price-old">R$ 591,00</span>
+                <span class="kit__price-now">R$ 347</span>
+                <span class="kit__price-unit">R$ 115,67 / pote</span>
+                <a href="#" class="btn btn-primary btn-block">Reverter agora</a>
+              </div>
+            </article>
+
+            <article class="kit reveal--left" data-delay="3">
+              <div class="kit__visual">
+                <span class="kit__qty">5</span>
+                <span class="kit__qty-unit">potes · 150 dias</span>
+              </div>
+              <div class="kit__info">
+                <span class="kit__tag">Sustentar</span>
+                <h3 class="kit__title">Proteger o ganho ao longo do ano</h3>
+                <p class="kit__text">Para quem já passou pelo protocolo de 90 dias e quer manter o estado base elevado. Maior economia por unidade.</p>
+                <ul class="kit__list">
+                  <li>Frete expresso grátis</li>
+                  <li>Todos os bônus do kit anterior</li>
+                  <li>Atendimento prioritário</li>
+                  <li>Garantia 90 dias</li>
+                </ul>
+              </div>
+              <div class="kit__price">
+                <span class="kit__price-old">R$ 985,00</span>
+                <span class="kit__price-now">R$ 497</span>
+                <span class="kit__price-unit">R$ 99,40 / pote</span>
+                <a href="#" class="btn btn-primary btn-block">Sustentar 150 dias</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════
+           7. DEPOIMENTOS — Carousel horizontal
+           ══════════════════════════════════════════════ -->
+      <section class="section voices">
+        <div class="container">
+          <div class="section__head">
+            <span class="section__eyebrow reveal">Depoimentos</span>
+            <h2 class="section__title reveal">Antes e depois <span class="text-accent">— em palavras de quem viveu.</span></h2>
+          </div>
+        </div>
+
+        <div class="voices__rail">
+          <article class="voice reveal--left" data-delay="1">
+            <div class="voice__head">
+              <div class="voice__avatar voice__avatar--r">R</div>
+              <div>
+                <p class="voice__name">Rafael M.</p>
+                <p class="voice__meta">Empresário, 34 anos · São Paulo</p>
+              </div>
+              <span class="voice__stars">★★★★★</span>
+            </div>
+            <div class="voice__delta">
+              <div class="voice__delta-row"><span class="voice__delta-tag">Antes</span><p>4 cafés/dia, queda total às 17h, irritação com a equipe.</p></div>
+              <div class="voice__delta-row"><span class="voice__delta-tag voice__delta-tag--after">Agora</span><p>1 café pela manhã, foco até 22h, segundo pote em curso. Não pretendo parar.</p></div>
+            </div>
+          </article>
+
+          <article class="voice reveal--scale" data-delay="2">
+            <div class="voice__head">
+              <div class="voice__avatar voice__avatar--a">A</div>
+              <div>
+                <p class="voice__name">Ana C.</p>
+                <p class="voice__meta">Advogada, 29 anos · Rio de Janeiro</p>
+              </div>
+              <span class="voice__stars">★★★★★</span>
+            </div>
+            <div class="voice__delta">
+              <div class="voice__delta-row"><span class="voice__delta-tag">Antes</span><p>Insônia recorrente, mente acelerada o dia todo, café para não desabar.</p></div>
+              <div class="voice__delta-row"><span class="voice__delta-tag voice__delta-tag--after">Agora</span><p>Durmo 7h direto e acordo limpa. O sono mudou tudo — produtividade dobrou.</p></div>
+            </div>
+          </article>
+
+          <article class="voice reveal--right" data-delay="3">
+            <div class="voice__head">
+              <div class="voice__avatar voice__avatar--d">D</div>
+              <div>
+                <p class="voice__name">Diego L.</p>
+                <p class="voice__meta">Atleta amador, 31 anos · Curitiba</p>
+              </div>
+              <span class="voice__stars">★★★★★</span>
+            </div>
+            <div class="voice__delta">
+              <div class="voice__delta-row"><span class="voice__delta-tag">Antes</span><p>Recuperação ruim entre treinos, dor muscular acumulada, sono agitado.</p></div>
+              <div class="voice__delta-row"><span class="voice__delta-tag voice__delta-tag--after">Agora</span><p>Treino mais pesado, recuperação real, zero estimulante. PR no agachamento.</p></div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════
+           8. GARANTIA — Banner full-bleed
+           ══════════════════════════════════════════════ -->
+      <section class="guarantee-banner" id="garantia">
+        <div class="container">
+          <div class="guarantee-banner__inner reveal">
+            <div class="guarantee-banner__seal">
+              <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <polyline points="9 12 11 14 15 10"/>
+              </svg>
+              <span class="guarantee-banner__seal-label">90 dias</span>
+            </div>
+            <div class="guarantee-banner__body">
+              <h3 class="guarantee-banner__title">90 dias bebendo. Se sua biologia não responder, devolvemos.</h3>
+              <p class="guarantee-banner__text">Não é favor. É o que prometemos. Use o protocolo completo, faça o tracking de energia, foco e sono. Se não houver mudança mensurável até o dia 90, basta um e-mail e devolvemos 100% — frete incluso. O risco é nosso, não seu.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════
+           9. FAQ — Grid 2 colunas
+           ══════════════════════════════════════════════ -->
+      <section class="section faq" id="faq">
+        <div class="container">
+          <div class="section__head">
+            <span class="section__eyebrow reveal">Dúvidas</span>
+            <h2 class="section__title reveal">Perguntas <span class="text-accent">frequentes</span></h2>
+          </div>
+
+          <div class="faq__grid">
+            <div class="faq__item reveal">
+              <button class="faq__q" aria-expanded="false">Blessed tem efeitos colaterais?</button>
+              <div class="faq__a"><p>Não. A fórmula é 100% natural, sem estimulantes agressivos. Não causa dependência, insônia ou efeito rebote. Usa adaptógenos clinicamente validados em doses seguras.</p></div>
+            </div>
+            <div class="faq__item reveal">
+              <button class="faq__q" aria-expanded="false">Funciona se eu já tomo café ou outros estimulantes?</button>
+              <div class="faq__a"><p>Sim — e na verdade você provavelmente vai querer reduzir café gradualmente. Blessed regula a base bioquímica que faz você precisar de estimulantes. A maioria dos clientes corta para 1 café/dia em 30 dias.</p></div>
+            </div>
+            <div class="faq__item reveal">
+              <button class="faq__q" aria-expanded="false">Em quanto tempo vejo resultado?</button>
+              <div class="faq__a"><p>Energia e foco: 7 a 14 dias. Sono profundo: 21 a 30 dias. Reset completo do eixo cortisol-dopamina: 90 dias — daí o protocolo de 3 potes ser o recomendado.</p></div>
+            </div>
+            <div class="faq__item reveal">
+              <button class="faq__q" aria-expanded="false">Como devo tomar?</button>
+              <div class="faq__a"><p>2 cápsulas pela manhã com um copo grande de água, idealmente em jejum ou antes do café. Cada pote tem 60 cápsulas (30 dias). Consistência diária é o que entrega o resultado.</p></div>
+            </div>
+            <div class="faq__item reveal">
+              <button class="faq__q" aria-expanded="false">Tem registro Anvisa?</button>
+              <div class="faq__a"><p>Sim. Blessed é registrado e fabricado em laboratório certificado pela Anvisa, em conformidade com BPF (Boas Práticas de Fabricação). Cada lote é rastreável.</p></div>
+            </div>
+            <div class="faq__item reveal">
+              <button class="faq__q" aria-expanded="false">Posso combinar com outros suplementos?</button>
+              <div class="faq__a"><p>Sim, a fórmula é compatível com a maioria — ômega-3, creatina, multivitamínico. Em caso de medicação contínua ou condição clínica específica, vale alinhar com seu médico.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ══════════════════════════════════════════════
+           10. CTA FINAL — Cierre full-bleed
+           ══════════════════════════════════════════════ -->
+      <section class="closing">
+        <div class="closing__bg"></div>
+        <div class="container">
+          <div class="closing__inner reveal--scale">
+            <span class="closing__eyebrow">Última palavra</span>
+            <h2 class="closing__title">Sua biologia merece. <span class="text-accent">Você merece.</span></h2>
+            <p class="closing__text">Pare de operar no piloto automático. 90 dias é tudo que separa quem você é hoje de quem você seria com cortisol regulado, foco contínuo e sono profundo.</p>
+            <a href="#kits" class="btn btn-primary btn-xl">Reverter agora &rarr;</a>
+            <p class="closing__fine">Garantia incondicional de 90 dias · Frete grátis · Pagamento em até 12x</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── Footer ── -->
+      <footer class="footer">
+        <div class="container">
+          <p>&copy; 2026 Rei da VSL — Blessed Suplementos. Todos os direitos reservados.</p>
         </div>
       </footer>
     </main>
 
-    <script src="../src/js/main.js" type="module"></script>
+    <script>
+      /* 1. Reveal on scroll */
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(e => {
+          if (e.isIntersecting) {
+            e.target.classList.add('visible');
+            if (e.target.classList.contains('cbar')) animateBars(e.target);
+            obs.unobserve(e.target);
+          }
+        });
+      }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+      document.querySelectorAll('.reveal, .reveal--left, .reveal--right, .reveal--scale, .cbar').forEach(el => obs.observe(el));
+
+      /* 2. Animate stat bars on view */
+      function animateBars(el) {
+        el.querySelectorAll('.cbar__fill').forEach(fill => {
+          const target = fill.style.getPropertyValue('--w');
+          fill.animate([{ width: '0%' }, { width: target }], { duration: 1100, easing: 'cubic-bezier(0.16,1,0.3,1)', fill: 'forwards' });
+        });
+      }
+
+      /* 3. FAQ */
+      document.querySelectorAll('.faq__q').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const item = btn.parentElement;
+          const open = item.classList.contains('open');
+          document.querySelectorAll('.faq__item').forEach(i => {
+            i.classList.remove('open');
+            i.querySelector('.faq__q').setAttribute('aria-expanded', 'false');
+          });
+          if (!open) {
+            item.classList.add('open');
+            btn.setAttribute('aria-expanded', 'true');
+          }
+        });
+      });
+
+      /* 4. Nav scroll state */
+      const nav = document.getElementById('nav');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 60) nav.classList.add('nav--scrolled');
+        else nav.classList.remove('nav--scrolled');
+      }, { passive: true });
+
+      /* 5. Mobile nav */
+      const navToggle = document.getElementById('navToggle');
+      const navLinks = document.getElementById('navLinks');
+      if (navToggle) {
+        navToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('open');
+          navToggle.textContent = navLinks.classList.contains('open') ? '✕' : '☰';
+        });
+      }
+
+      /* 6. Smooth scroll */
+      document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', (e) => {
+          const id = a.getAttribute('href');
+          if (id.length <= 1) return;
+          const t = document.querySelector(id);
+          if (t) {
+            e.preventDefault();
+            t.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            navLinks.classList.remove('open');
+            if (navToggle) navToggle.textContent = '☰';
+          }
+        });
+      });
+    </script>
   </body>
 </html>

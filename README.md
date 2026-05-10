@@ -1,5 +1,7 @@
 # Rei da VSL - Arquitetura de Portfólios Unificados
 
+> **Repositório GitHub (Deploy/CI):** `https://github.com/vodetmor/remodelacao-reidavsl.git`
+
 Este repositório contém o código-fonte do ecossistema front-end do projeto "Rei da VSL". A arquitetura foi refatorada para um modelo Multi-Page Application (MPA) utilizando HTML, CSS (Vanilla) e JavaScript, servido e empacotado através do Vite. 
 
 O objetivo desta transição foi eliminar a verbosidade e a dependência de frameworks baseados em estado (como Next.js e React) para páginas exclusivamente informacionais e voltadas para conversão (Landing Pages), garantindo performance máxima (Zero JavaScript overhead de UI) e controle absoluto sobre estilos e carregamento de assets.
